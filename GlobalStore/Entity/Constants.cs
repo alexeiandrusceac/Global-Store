@@ -20,6 +20,7 @@ namespace GlobalStore.Entity
         }
         public void getConstat()
         { 
+
         }
     }
 }
