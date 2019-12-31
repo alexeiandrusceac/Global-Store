@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GlobalStore"
         mc:Ignorable="d"
+        xmlns:extToolkit="http://schemas.xceed.com/wpf/xaml/toolkit"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" Height="600" Width="1024" WindowStyle="None" WindowStartupLocation="CenterScreen">
     <WindowChrome.WindowChrome>
         <WindowChrome CaptionHeight="0"/>
@@ -165,92 +166,127 @@
                 </ListViewItem>
             </ListView>
         </StackPanel>
-        <Grid x:Name="GridMain" Background="#FFFBFBFB" Margin="222,50,0,0" RenderTransformOrigin="0.5,0.5">
-            <Grid.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Grid.RenderTransform>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="250"/>
-            </Grid.ColumnDefinitions>
-
-            <Grid Grid.Column="1" Background="#242222">
-                <Image x:Name="mainImage" Height="150" VerticalAlignment="Top"  Stretch="UniformToFill"/>
-
-                <TextBlock x:Name="productTitle"  Foreground="White" FontSize="28" FontFamily="Nirmala UI Semilight" Margin="10 100" VerticalAlignment="Top"/>
-                <StackPanel Margin="0 150">
-
-                    <TextBlock x:Name="productDescription" TextWrapping="Wrap" Margin="10" Foreground="#FFFBFBFB" FontSize="14">
-                    </TextBlock>
-
-                </StackPanel>
-                <StackPanel Margin="0,150,0,40"/>
-            </Grid>
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="40"/>
-                    <RowDefinition Height="50"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
+        <Grid x:Name="mainGrid" Background="#FFFBFBFB" Margin="222,50,0,0" RenderTransformOrigin="0.5,0.5">
+            <Grid x:Name="scannerGrid" Visibility="Hidden">
+                <Grid.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Grid.RenderTransform>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="250"/>
                 </Grid.ColumnDefinitions>
+                <Grid x:Name="LayoutRoot" 
+      Background="White">
+                    <extToolkit:BusyIndicator x:Name="busyIndicator" IsBusy="true">
+                        <Grid>
+                            <Button Click="StartProcess">Start Process</Button>
+                        </Grid>
+                    </extToolkit:BusyIndicator>
+                </Grid>
+                <Grid Grid.Column="1" Background="#242222">
+                    <Image x:Name="mainImage" Height="150" VerticalAlignment="Top"  Stretch="UniformToFill"/>
+
+                    <TextBlock x:Name="productTitle"  Foreground="White" FontSize="28" FontFamily="Nirmala UI Semilight" Margin="10 100" VerticalAlignment="Top"/>
+                    <StackPanel Margin="0 150">
+
+                        <TextBlock x:Name="productDescription" TextWrapping="Wrap" Margin="10" Foreground="#FFFBFBFB" FontSize="14">
+                        </TextBlock>
+
+                    </StackPanel>
+                    <StackPanel Margin="0,150,0,40"/>
+                </Grid>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
 
 
-                <TextBlock Text="Imaginile produsului" Foreground="#242222" FontSize="14" FontWeight="Bold" Margin="5,0"/>
+                    <TextBlock Text="Imaginile produsului" Foreground="#242222" FontSize="14" FontWeight="Bold" Margin="5,0"/>
 
-                <Grid Margin="5" Grid.Row="2" Grid.Column="0">
-                    <Grid.Effect>
-                        <DropShadowEffect BlurRadius="20" Color="#FFEEEEEE" ShadowDepth="1"/>
-                    </Grid.Effect>
-                    <Image  Stretch="UniformToFill"/>
-                    <StackPanel Orientation="Horizontal" Margin="5" HorizontalAlignment="Right" VerticalAlignment="Bottom">
-                        <materialDesign:PackIcon Kind="Heart" Foreground="#FFFBFBFB"/>
-                        <TextBlock Text="25" Foreground="#FFFBFBFB"/>
-                    </StackPanel>
-                </Grid>
-                <Grid Margin="5" Grid.Row="2" Grid.Column="1">
-                    <Grid.Effect>
-                        <DropShadowEffect BlurRadius="20" Color="#FFEEEEEE" ShadowDepth="1"/>
-                    </Grid.Effect>
-                    <Image  Stretch="UniformToFill"/>
-                    <StackPanel Orientation="Horizontal" Margin="5" HorizontalAlignment="Right" VerticalAlignment="Bottom">
-                        <materialDesign:PackIcon Kind="Heart" Foreground="#FFFBFBFB"/>
-                        <TextBlock Text="50" Foreground="#FFFBFBFB"/>
-                    </StackPanel>
-                </Grid>
-                <Grid Margin="5" Grid.Row="2" Grid.Column="2">
-                    <Grid.Effect>
-                        <DropShadowEffect BlurRadius="20" Color="#FFEEEEEE" ShadowDepth="1"/>
-                    </Grid.Effect>
-                    <Image  Stretch="UniformToFill"/>
-                    <StackPanel Orientation="Horizontal" Margin="5" HorizontalAlignment="Right" VerticalAlignment="Bottom">
-                        <materialDesign:PackIcon Kind="Heart" Foreground="#FFFBFBFB"/>
-                        <TextBlock Text="18" Foreground="#FFFBFBFB"/>
-                    </StackPanel>
-                </Grid>
-                <Grid Margin="5" Grid.Row="3" Grid.Column="0">
-                    <Grid.Effect>
-                        <DropShadowEffect BlurRadius="20" Color="#FFEEEEEE" ShadowDepth="1"/>
-                    </Grid.Effect>
-                    <Image  Stretch="UniformToFill"/>
-                    <StackPanel Orientation="Horizontal" Margin="5" HorizontalAlignment="Right" VerticalAlignment="Bottom">
-                        <materialDesign:PackIcon Kind="Heart" Foreground="#FFFBFBFB"/>
-                        <TextBlock Text="32" Foreground="#FFFBFBFB"/>
-                    </StackPanel>
+                    <Grid Margin="5" Grid.Row="2" Grid.Column="0">
+                        <Grid.Effect>
+                            <DropShadowEffect BlurRadius="20" Color="#FFEEEEEE" ShadowDepth="1"/>
+                        </Grid.Effect>
+                        <Image  Stretch="UniformToFill"/>
+                        <StackPanel Orientation="Horizontal" Margin="5" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                            <materialDesign:PackIcon Kind="Heart" Foreground="#FFFBFBFB"/>
+                            <TextBlock Text="25" Foreground="#FFFBFBFB"/>
+                        </StackPanel>
+                    </Grid>
+                    <Grid Margin="5" Grid.Row="2" Grid.Column="1">
+                        <Grid.Effect>
+                            <DropShadowEffect BlurRadius="20" Color="#FFEEEEEE" ShadowDepth="1"/>
+                        </Grid.Effect>
+                        <Image  Stretch="UniformToFill"/>
+                        <StackPanel Orientation="Horizontal" Margin="5" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                            <materialDesign:PackIcon Kind="Heart" Foreground="#FFFBFBFB"/>
+                            <TextBlock Text="50" Foreground="#FFFBFBFB"/>
+                        </StackPanel>
+                    </Grid>
+                    <Grid Margin="5" Grid.Row="2" Grid.Column="2">
+                        <Grid.Effect>
+                            <DropShadowEffect BlurRadius="20" Color="#FFEEEEEE" ShadowDepth="1"/>
+                        </Grid.Effect>
+                        <Image  Stretch="UniformToFill"/>
+                        <StackPanel Orientation="Horizontal" Margin="5" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                            <materialDesign:PackIcon Kind="Heart" Foreground="#FFFBFBFB"/>
+                            <TextBlock Text="18" Foreground="#FFFBFBFB"/>
+                        </StackPanel>
+                    </Grid>
+                    <Grid Margin="5" Grid.Row="3" Grid.Column="0">
+                        <Grid.Effect>
+                            <DropShadowEffect BlurRadius="20" Color="#FFEEEEEE" ShadowDepth="1"/>
+                        </Grid.Effect>
+                        <Image  Stretch="UniformToFill"/>
+                        <StackPanel Orientation="Horizontal" Margin="5" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                            <materialDesign:PackIcon Kind="Heart" Foreground="#FFFBFBFB"/>
+                            <TextBlock Text="32" Foreground="#FFFBFBFB"/>
+                        </StackPanel>
+                    </Grid>
                 </Grid>
             </Grid>
-        </Grid>
-        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="50" HorizontalAlignment="Right" Width="100">
+            <Grid x:Name="feedbackGrid" Visibility="Hidden">
+                <Grid.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Grid.RenderTransform>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="250"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="1" Background="#242222">
+                   
+                    <TextBlock x:Name="feedback1"  Foreground="White" FontSize="28" FontFamily="Nirmala UI Semilight" Margin="10 100" VerticalAlignment="Top"/>
+                    <StackPanel Margin="0 150">
+
+                        <TextBlock x:Name="feedback2" TextWrapping="Wrap" Margin="10" Foreground="#FFFBFBFB" FontSize="14">
+                        </TextBlock>
+
+                    </StackPanel>
+                    <StackPanel Margin="0,150,0,40"/>
+                </Grid>
+            </Grid>
+         </Grid>
+        
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="50" HorizontalAlignment="Right" Width="100">
             <Button  x:Name="ButtonMinimize" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="30" Height="30" Padding="0" Background="{x:Null}" BorderBrush="{x:Null}" Click="ButtonMinimize_Click">
                 <materialDesign:PackIcon Kind="WindowMinimize"/>
             </Button>

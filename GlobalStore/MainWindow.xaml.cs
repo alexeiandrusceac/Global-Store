@@ -30,7 +30,7 @@ namespace GlobalStore
         Rect rect = new Rect();
         AcceptWindow acceptWindow = new AcceptWindow();
         Language language = new Language();
-
+        Product thisProduct = new Product();
         public bool InvokeRequired { get; private set; }
 
         public MainWindow()
@@ -40,24 +40,27 @@ namespace GlobalStore
         }
         private void translateInterface(Language lang)
         {
-            refreshData(lang);
-        }
-
-        private void refreshData(Language lang)
-        {
             switch (lang)
             {
                 case Entity.Language.RO:
-                break;
+                    refreshData(thisProduct, lang);
+                    break;
+                case Entity.Language.RU:
+                    refreshData(thisProduct, lang);
+                    break;
+                case Entity.Language.EN:
+                    refreshData(thisProduct, lang);
+                    break;
             }
+           
         }
 
         void populateData()
         {
-           /* serialPortManager = new SerialPortManager.SerialPortManager();
+            serialPortManager = new SerialPortManager.SerialPortManager();
             SerialSettings mySerialSettings = serialPortManager.CurrentSerialSettings;
             serialPortManager.NewSerialDataRecieved += new EventHandler<SerialDataEventArgs>(serialPortManager_NewSerialDataRecieved);
-            serialPortManager.StartListening();*/
+            serialPortManager.StartListening();
 
         }
         private Rect GetWindowSize()
@@ -74,32 +77,39 @@ namespace GlobalStore
         {
             if (this.InvokeRequired)
             {
-                //this.BeginInvoke(new EventHandler<SerialDataEventArgs>(serialPortManager_NewSerialDataRecieved), new object[] { sender, e });
                 return;
             }
 
             string barcode = Encoding.ASCII.GetString(e.Data);
 
-            fillData( new Product().convertToProductFromObj(
+            refreshData( thisProduct.convertToProductFromObj(
                 webInteraction.getProductByBarcode(barcode.Trim())),language);
             
-                       
-            /* myUserControl.descriptionLabel.Text = rm.GetString("description",ci);
-             myUserControl.productTitle.Text = productData.getName(_language);
-             myUserControl.descriptionValue.Text = productData.getDescription(_language);
-             myUserControl.priceLabelValue.Text = string.Format(rm.GetString("price",ci) + productData.Price + " MDL");*/
-
         }
-        private void fillData(Product data, Language language)
+        private void StartProcess(object sender, RoutedEventArgs e)
         {
+            //show BusyIndicator
+            busyIndicator.IsBusy = true;
 
-            this.productTitle.Text = data.getTitle(language);
-            this.productDescription.Text = data.getDescription(language);
-            //this.productDescription.Text = data.TitleRO;
-            
-            /*DescriptionProduct.Text = productData.DescriptionRO;
-            Price.Text = productData.Price.ToString();*/
+            //long running process
+            for (int i = 0; i < 100; i++)
+            {
+                System.Threading.Thread.Sleep(50);
+            }
+            //hide BusyIndicator
+            busyIndicator.IsBusy = false;
+        }
 
+        private void refreshData(Product data, Language language)
+        {
+            if (data != null)
+            {
+                this.productTitle.Text = data.getTitle(language);
+                this.productDescription.Text = data.getDescription(language);
+               // this.productPrice.Text = string.Format( "{0} {1}",data.Price + data.PricePromo);
+
+            }
+           
         }
 
         private void ButtonMaximize_Click(object sender,RoutedEventArgs e)
@@ -147,7 +157,8 @@ namespace GlobalStore
 
         private void listViewItemLeaveFeedback_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-
+            this.feedbackGrid.Visibility = Visibility.Visible;
+            this.scannerGrid.Visibility = Visibility.Hidden;
         }
 
         private void listViewTranslateEn_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
@@ -168,7 +179,8 @@ namespace GlobalStore
 
         private void listViewItemScanning_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-
+            this.feedbackGrid.Visibility = Visibility.Hidden;
+            this.scannerGrid.Visibility = Visibility.Visible;
         }
     }
 }
