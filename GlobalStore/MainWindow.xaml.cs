@@ -60,7 +60,10 @@ namespace GlobalStore
             serialPortManager = new SerialPortManager.SerialPortManager();
             SerialSettings mySerialSettings = serialPortManager.CurrentSerialSettings;
             serialPortManager.NewSerialDataRecieved += new EventHandler<SerialDataEventArgs>(serialPortManager_NewSerialDataRecieved);
-            serialPortManager.StartListening();
+            //if (((SerialSettings)serialPortManager.CurrentSerialSettings).PortName != null)
+           // {
+                serialPortManager.StartListening();
+          //  }
 
         }
         private Rect GetWindowSize()

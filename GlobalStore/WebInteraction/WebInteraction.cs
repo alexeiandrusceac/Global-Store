@@ -14,11 +14,13 @@ namespace GlobalStore
         public string BASEURL = "http://localhost:52191/GlobalStoreWebService.asmx/";
         public string GETBYBARCODE = "getProductByBarcode";
         public string GETADMIN = "getAdmin";
-
+        
         public WebInteraction()
         { 
             
         }
+
+        
         public bool getStatus(string password)
         {
             bool accept = false;

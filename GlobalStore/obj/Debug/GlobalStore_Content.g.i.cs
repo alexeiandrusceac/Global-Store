@@ -8,8 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/language/english.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/language/romanian.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/language/russian.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/barcode.gif")]
 
 

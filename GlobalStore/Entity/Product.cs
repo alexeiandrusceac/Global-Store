@@ -23,7 +23,7 @@ namespace GlobalStore.Entity
         public int QtyBox { get; set; }
 
         public byte[] Image { get; set; }
-
+        
         public string DescriptionEN { get; set; }
         public string DescriptionRU { get; set; }
         public string DescriptionRO { get; set; }
@@ -42,6 +42,7 @@ namespace GlobalStore.Entity
                 TitleEN = (string)dataProduct.GetType().GetProperty("TitleEN").GetValue(dataProduct),
                 Barcode = (int)dataProduct.GetType().GetProperty("Barcode").GetValue(dataProduct),
                 Price = (double)dataProduct.GetType().GetProperty("Price").GetValue(dataProduct),
+                Image = (byte[])dataProduct.GetType().GetProperty("Image").GetValue(dataProduct),
                 PricePromo = (double)dataProduct.GetType().GetProperty("PricePromo").GetValue(dataProduct),
                 QtySet = (int)dataProduct.GetType().GetProperty("QtySet").GetValue(dataProduct),
                 QtyBox = (int)dataProduct.GetType().GetProperty("QtyBox").GetValue(dataProduct),
