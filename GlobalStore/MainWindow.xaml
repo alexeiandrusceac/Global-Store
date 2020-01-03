@@ -221,10 +221,9 @@
                                             </TransformGroup>
                                         </Grid.RenderTransform>
                                         <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*"/>
-
-                                        </Grid.ColumnDefinitions>
-                                        <TextBlock>Scanati produsul dvs</TextBlock>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock x:Name="txt_scan"></TextBlock>
                                         <Image gif:ImageBehavior.AnimatedSource="Resources/barcode.gif"/>
                                     </Grid>
                                 </extToolkit:BusyIndicator>

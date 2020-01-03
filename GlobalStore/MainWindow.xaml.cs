@@ -16,6 +16,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using GlobalStore.Entity;
 using GlobalStore.UserPermisions;
+using System.Resources;
+using System.Globalization;
 //using GlobalStore.SerialPortManager.SerialPortManager;
 
 namespace GlobalStore
@@ -30,7 +32,7 @@ namespace GlobalStore
         Rect rect = new Rect();
         AcceptWindow acceptWindow = new AcceptWindow();
         Language language = new Language();
-        Product thisProduct = new Product();
+        Product thisProduct =  null;
         public bool InvokeRequired { get; private set; }
 
         public MainWindow()
@@ -60,10 +62,8 @@ namespace GlobalStore
             serialPortManager = new SerialPortManager.SerialPortManager();
             SerialSettings mySerialSettings = serialPortManager.CurrentSerialSettings;
             serialPortManager.NewSerialDataRecieved += new EventHandler<SerialDataEventArgs>(serialPortManager_NewSerialDataRecieved);
-            //if (((SerialSettings)serialPortManager.CurrentSerialSettings).PortName != null)
-           // {
-                serialPortManager.StartListening();
-          //  }
+             serialPortManager.StartListening();
+          
 
         }
         private Rect GetWindowSize()
@@ -84,9 +84,8 @@ namespace GlobalStore
             }
 
             string barcode = Encoding.ASCII.GetString(e.Data);
-
-            refreshData( thisProduct.convertToProductFromObj(
-                webInteraction.getProductByBarcode(barcode.Trim())),language);
+            thisProduct = webInteraction.getProductByBarcode(barcode.Trim());
+            refreshData(thisProduct,language);
             
         }
         private void StartProcess(object sender, RoutedEventArgs e)
@@ -105,8 +104,10 @@ namespace GlobalStore
 
         private void refreshData(Product data, Language language)
         {
-            if (data != null)
+            this.txt_scan.Text = new ResourceManager("GlobalStore.Localisation.Interface", typeof(MainWindow).Assembly).GetString("TXT_SCANNING", CultureInfo.GetCultureInfo(language.ToString()));
+            if (data !=null)
             {
+
                 this.productTitle.Text = data.getTitle(language);
                 this.productDescription.Text = data.getDescription(language);
                // this.productPrice.Text = string.Format( "{0} {1}",data.Price + data.PricePromo);

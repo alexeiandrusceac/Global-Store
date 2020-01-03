@@ -20,7 +20,6 @@ C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\GlobalStore.csproj
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\GlobalStore.csproj.CopyComplete
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\GlobalStore.exe
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\GlobalStore.pdb
-C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\GlobalStore.csprojAssemblyReference.cache
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\LoadingWindow.g.cs
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\LoadingWindow.baml
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\UserPermisions\AcceptWindow.g.cs
@@ -115,3 +114,15 @@ D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Debug\GlobalS
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Debug\GlobalStore.pdb
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Debug\WpfAnimatedGif.dll
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Debug\WpfAnimatedGif.xml
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Debug\WpfAnimatedGif.dll
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Debug\WpfAnimatedGif.xml
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Debug\en\GlobalStore.resources.dll
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Debug\ro\GlobalStore.resources.dll
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Debug\ru\GlobalStore.resources.dll
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\GlobalStore.csprojAssemblyReference.cache
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\GlobalStore.Localisation.Interface.en.resources
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\GlobalStore.Localisation.Interface.ro.resources
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\GlobalStore.Localisation.Interface.ru.resources
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\en\GlobalStore.resources.dll
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\ro\GlobalStore.resources.dll
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\ru\GlobalStore.resources.dll
