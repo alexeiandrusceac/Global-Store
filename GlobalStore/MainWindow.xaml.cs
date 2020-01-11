@@ -27,6 +27,7 @@ namespace GlobalStore
     /// </summary>
     public partial class MainWindow : Window
     {
+        private ResourceManager resourceManager;
         private SerialPortManager.SerialPortManager serialPortManager;
         WebInteraction webInteraction = new WebInteraction();
         Rect rect = new Rect();
@@ -38,6 +39,9 @@ namespace GlobalStore
         public MainWindow()
         {
             language = Entity.Language.RO;
+            InitializeComponent();
+            resourceManager = new ResourceManager("GlobalStore.Localisation.Interface", typeof(MainWindow).Assembly);
+            translateInterface(language);
             populateData();
         }
         private void translateInterface(Language lang)
@@ -104,7 +108,15 @@ namespace GlobalStore
 
         private void refreshData(Product data, Language language)
         {
-            this.txt_scan.Text = new ResourceManager("GlobalStore.Localisation.Interface", typeof(MainWindow).Assembly).GetString("TXT_SCANNING", CultureInfo.GetCultureInfo(language.ToString()));
+            ResourceManager resourceManager = new ResourceManager("GlobalStore.Localisation.Interface", typeof(MainWindow).Assembly);
+            CultureInfo cultureInfo = CultureInfo.GetCultureInfo(language.ToString());
+
+            this.txt_scan.Text = resourceManager.GetString("TXT_SCANNING", cultureInfo).ToString();
+            this.txt_en.Text = resourceManager.GetString("TXT_EN", cultureInfo).ToString();
+            this.txt_ro.Text = resourceManager.GetString("TXT_RO", cultureInfo).ToString();
+            this.txt_ru.Text = resourceManager.GetString("TXT_RU", cultureInfo).ToString();
+            this.listViewItem_txtleaveFbck.Text = resourceManager.GetString("TXT_LEAVE_FEEDBACK", cultureInfo).ToString();
+            this.listViewItem_txtscan.Text = resourceManager.GetString("TXT_SCAN", cultureInfo).ToString();
             if (data !=null)
             {
 
@@ -154,37 +166,31 @@ namespace GlobalStore
             ButtonCloseMenu.Visibility = Visibility.Collapsed;*/
         }
 
-        private void listViewItem1_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
-        {
-
-        }
-
-        private void listViewItemLeaveFeedback_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
-        {
-            this.feedbackGrid.Visibility = Visibility.Visible;
-            this.scannerGrid.Visibility = Visibility.Hidden;
-        }
-
-        private void listViewTranslateEn_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        private void listViewTranslateEn_Selected(object sender, RoutedEventArgs e)
         {
             translateInterface(Entity.Language.EN);
-
         }
 
-        private void listViewTranslateRo_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        private void listViewItemScanning_Selected(object sender, RoutedEventArgs e)
+        {
+            this.mainGrid.Visibility = Visibility.Visible;
+            this.feedbackGrid.Visibility = Visibility.Hidden;
+        }
+
+        private void listViewTranslateRo_Selected(object sender, RoutedEventArgs e)
         {
             translateInterface(Entity.Language.RO);
         }
 
-        private void listViewTranslateRu_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        private void listViewTranslateRu_Selected(object sender, RoutedEventArgs e)
         {
             translateInterface(Entity.Language.RU);
         }
 
-        private void listViewItemScanning_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        private void listViewItemLeaveFeedback_Selected(object sender, RoutedEventArgs e)
         {
-            this.feedbackGrid.Visibility = Visibility.Hidden;
-            this.scannerGrid.Visibility = Visibility.Visible;
+            this.mainGrid.Visibility = Visibility.Hidden;
+            this.feedbackGrid.Visibility = Visibility.Visible;
         }
     }
 }

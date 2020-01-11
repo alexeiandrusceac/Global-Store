@@ -69,7 +69,7 @@
             
             <ListView>
 
-                <ListViewItem x:Name="listViewItemScanning" Height="60" RenderTransformOrigin="0.5,0.5" PreviewMouseLeftButtonUp="listViewItemScanning_PreviewMouseLeftButtonUp">
+                <ListViewItem x:Name="listViewItemScanning" Height="60" RenderTransformOrigin="0.5,0.5"  Selected="listViewItemScanning_Selected">
                     <ListViewItem.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -80,10 +80,10 @@
                     </ListViewItem.RenderTransform>
                     <StackPanel Orientation="Horizontal" Margin="10 0">
                         <materialDesign:PackIcon Kind="Scanner" Foreground="#242222" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Scanati produsul" Foreground="#242222" Margin="10" VerticalAlignment="Center"/>
+                        <TextBlock x:Name="listViewItem_txtscan" Foreground="#242222" Margin="10" VerticalAlignment="Center"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem x:Name="listViewItemLeaveFeedback" Height="60" RenderTransformOrigin="0.5,0.5" PreviewMouseLeftButtonUp="listViewItemLeaveFeedback_PreviewMouseLeftButtonUp">
+                <ListViewItem x:Name="listViewItemLeaveFeedback" Height="60" RenderTransformOrigin="0.5,0.5"  Selected="listViewItemLeaveFeedback_Selected">
                     <ListViewItem.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -94,12 +94,12 @@
                     </ListViewItem.RenderTransform>
                     <StackPanel Orientation="Horizontal" Margin="10 0">
                         <materialDesign:PackIcon Kind="Feedback" Foreground="#242222" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Lasati-ne un feedback" Margin="10" Foreground="#242222" VerticalAlignment="Center" />
+                        <TextBlock x:Name="listViewItem_txtleaveFbck" Margin="10" Foreground="#242222" VerticalAlignment="Center" />
                     </StackPanel>
                 </ListViewItem>
             </ListView>
             <ListView Height="381">
-                <ListViewItem x:Name="listViewTranslateEn" Height="60" RenderTransformOrigin="0.5,0.5" PreviewMouseLeftButtonUp="listViewTranslateEn_PreviewMouseLeftButtonUp">
+                <ListViewItem x:Name="listViewTranslateEn" Height="60" RenderTransformOrigin="0.5,0.5"  Selected="listViewTranslateEn_Selected">
                     <ListViewItem.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -110,10 +110,10 @@
                     </ListViewItem.RenderTransform>
                     <StackPanel Orientation="Horizontal" Margin="10 0">
                         <Image Source="Resources/Language/english.png" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Engleza" Margin="10" Foreground="#242222" VerticalAlignment="Center" />
+                        <TextBlock x:Name="txt_en" Margin="10" Foreground="#242222" VerticalAlignment="Center" />
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem x:Name="listViewTranslateRo" Height="60" RenderTransformOrigin="0.5,0.5" PreviewMouseLeftButtonUp="listViewTranslateRo_PreviewMouseLeftButtonUp">
+                <ListViewItem x:Name="listViewTranslateRo" Height="60" RenderTransformOrigin="0.5,0.5" Selected="listViewTranslateRo_Selected">
                     <ListViewItem.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -124,10 +124,10 @@
                     </ListViewItem.RenderTransform>
                     <StackPanel Orientation="Horizontal" Margin="10 0">
                         <Image Source="Resources/Language/romanian.png"  Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Română" Margin="10" Foreground="#242222" VerticalAlignment="Center" />
+                        <TextBlock x:Name="txt_ro" Margin="10" Foreground="#242222" VerticalAlignment="Center" />
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem x:Name="listViewTranslateRu" Height="60" RenderTransformOrigin="0.5,0.5" PreviewMouseLeftButtonUp="listViewTranslateRu_PreviewMouseLeftButtonUp">
+                <ListViewItem x:Name="listViewTranslateRu" Height="60" RenderTransformOrigin="0.5,0.5" Selected="listViewTranslateRu_Selected">
                     <ListViewItem.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -138,7 +138,7 @@
                     </ListViewItem.RenderTransform>
                     <StackPanel Orientation="Horizontal" Margin="10 0">
                         <Image Source="Resources/Language/russian.png"  Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="Rusă" Margin="10" Foreground="#242222" VerticalAlignment="Center" />
+                        <TextBlock x:Name="txt_ru" Margin="10" Foreground="#242222" VerticalAlignment="Center" />
                     </StackPanel>
                 </ListViewItem>
             </ListView>

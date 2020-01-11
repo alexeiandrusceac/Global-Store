@@ -48,7 +48,8 @@ namespace GlobalStore.Entity
                 QtyBox = (int)dataProduct.GetType().GetProperty("QtyBox").GetValue(dataProduct),
                 DescriptionEN = (string)dataProduct.GetType().GetProperty("DescriptionEN").GetValue(dataProduct),
                 DescriptionRO = (string)dataProduct.GetType().GetProperty("DescriptionRO").GetValue(dataProduct),
-                DescriptionRU = (string)dataProduct.GetType().GetProperty("DescriptionRU").GetValue(dataProduct)
+                DescriptionRU = (string)dataProduct.GetType().GetProperty("DescriptionRU").GetValue(dataProduct),
+                Model = (string)dataProduct.GetType().GetProperty("Model").GetValue(dataProduct),
 
             };
         }
@@ -59,16 +60,16 @@ namespace GlobalStore.Entity
                 case Language.RO:
 
                     return this.DescriptionRO.ToString();
-                    break;
+                    
                 case Language.EN:
                     return this.DescriptionEN.ToString();
-                    break;
+                    
                 case Language.RU:
                     return this.DescriptionRU.ToString();
-                    break;
+                    
                 default:
                     return this.DescriptionRO.ToString();
-                    break;
+                    
             }
         }
 
@@ -80,16 +81,16 @@ namespace GlobalStore.Entity
                 case Language.RO:
 
                     return this.TitleRO.ToString(); 
-                    break;
+                    
                 case Language.EN:
                     return this.TitleEN.ToString();
-                    break;
+                    
                 case Language.RU:
                     return this.TitleRU.ToString();
-                    break;
+                    
                 default:
                     return this.TitleRO.ToString();
-                    break;
+                    
             }
         }
 
