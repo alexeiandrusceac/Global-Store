@@ -4,6 +4,7 @@ D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Debug\GlobalS
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Debug\en\GlobalStore.resources.dll
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Debug\ro\GlobalStore.resources.dll
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Debug\ru\GlobalStore.resources.dll
+D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Debug\FontAwesome.WPF.dll
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Debug\MaterialDesignColors.dll
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Debug\MaterialDesignThemes.Wpf.dll
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Debug\Newtonsoft.Json.dll
@@ -14,6 +15,7 @@ D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Debug\Xceed.W
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Debug\FontAwesome.WPF.xml
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Debug\MaterialDesignColors.pdb
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Debug\MaterialDesignThemes.Wpf.pdb
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Debug\MaterialDesignThemes.Wpf.xml
@@ -33,6 +35,7 @@ D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Debug\Loading
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Debug\MainWindow.g.cs
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Debug\UserPermisions\AcceptWindow.g.cs
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Debug\App.g.cs
+D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Debug\GlobalStore_Content.g.cs
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Debug\GlobalStore_MarkupCompile.cache
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Debug\GlobalStore_MarkupCompile.lref
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Debug\App.baml
@@ -51,7 +54,3 @@ D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Debug\ru\Glob
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Debug\GlobalStore.csproj.CopyComplete
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Debug\GlobalStore.exe
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Debug\GlobalStore.pdb
-D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Debug\GlobalStore.csprojAssemblyReference.cache
-D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Debug\FontAwesome.WPF.dll
-D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Debug\FontAwesome.WPF.xml
-D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Debug\GlobalStore_Content.g.cs
