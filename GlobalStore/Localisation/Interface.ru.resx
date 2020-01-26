@@ -123,6 +123,12 @@
   <data name="TXT_LEAVE_FEEDBACK" xml:space="preserve">
     <value>Оставьте нам отзыв</value>
   </data>
+  <data name="TXT_NO_RESULT" xml:space="preserve">
+    <value>Нет такой продукт</value>
+  </data>
+  <data name="TXT_PRICEPROMO" xml:space="preserve">
+    <value>Промо</value>
+  </data>
   <data name="TXT_RO" xml:space="preserve">
     <value>Румынский</value>
   </data>
@@ -134,5 +140,8 @@
   </data>
   <data name="TXT_SCANNING" xml:space="preserve">
     <value>Пожалуйста, отсканируйте ваш продукт</value>
+  </data>
+  <data name="TXT_TOTALPRICE" xml:space="preserve">
+    <value>Итог</value>
   </data>
 </root>
