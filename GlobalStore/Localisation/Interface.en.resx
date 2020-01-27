@@ -123,6 +123,12 @@
   <data name="TXT_LEAVE_FEEDBACK" xml:space="preserve">
     <value>Leave us feedback</value>
   </data>
+  <data name="TXT_NO_RESULT" xml:space="preserve">
+    <value>No such product</value>
+  </data>
+  <data name="TXT_PRICEPROMO" xml:space="preserve">
+    <value>Promo price</value>
+  </data>
   <data name="TXT_RO" xml:space="preserve">
     <value>Romanian</value>
   </data>
@@ -134,5 +140,8 @@
   </data>
   <data name="TXT_SCANNING" xml:space="preserve">
     <value>Please scan your product</value>
+  </data>
+  <data name="TXT_TOTALPRICE" xml:space="preserve">
+    <value>Total price</value>
   </data>
 </root>

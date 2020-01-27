@@ -1,19 +1,10 @@
 ﻿using GlobalStore.SerialPortManager;
-using GlobalStore;
+
 using System;
-using System.Collections.Generic;
-using System.Linq;
+
 using System.Text;
-using System.Threading.Tasks;
+
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using GlobalStore.Entity;
 using GlobalStore.UserPermisions;
 using System.Resources;
@@ -35,12 +26,14 @@ namespace GlobalStore
         Language language = new Language();
         Product thisProduct =  null;
         public bool InvokeRequired { get; private set; }
-
+        private CultureInfo cultureInfo;
         public MainWindow()
         {
             language = Entity.Language.RO;
-            InitializeComponent();
+             InitializeComponent(); 
+            
             resourceManager = new ResourceManager("GlobalStore.Localisation.Interface", typeof(MainWindow).Assembly);
+            
             translateInterface(language);
             populateData();
         }
@@ -87,10 +80,29 @@ namespace GlobalStore
                 return;
             }
 
-            string barcode = Encoding.ASCII.GetString(e.Data);
-            thisProduct = webInteraction.getProductByBarcode(barcode.Trim());
-            refreshData(thisProduct,language);
-            
+            if (e.Data != null)
+            {
+                this.LayoutRoot.Visibility = Visibility.Hidden;
+                this.searchingGrid.Visibility = Visibility.Visible;
+                
+                string barcode = Encoding.ASCII.GetString(e.Data);
+                thisProduct = webInteraction.getProductByBarcode(barcode.Trim());
+                if (thisProduct != null)
+                {
+                    // this.searchResult.Text = resourceManager.GetString("TXT_NORESULT", cultureInfo).ToString();
+                    this.searchingGrid.Visibility = Visibility.Hidden;
+                    refreshData(thisProduct, language);
+                }
+                else
+                {
+                    this.searchResult.Text = resourceManager.GetString("TXT_NORESULT", cultureInfo).ToString();
+                }
+            }
+            else
+            {
+                this.LayoutRoot.Visibility = Visibility.Visible;
+            }
+
         }
         private void StartProcess(object sender, RoutedEventArgs e)
         {
@@ -109,20 +121,29 @@ namespace GlobalStore
         private void refreshData(Product data, Language language)
         {
             ResourceManager resourceManager = new ResourceManager("GlobalStore.Localisation.Interface", typeof(MainWindow).Assembly);
-            CultureInfo cultureInfo = CultureInfo.GetCultureInfo(language.ToString());
+             cultureInfo = CultureInfo.GetCultureInfo(language.ToString());
 
             this.txt_scan.Text = resourceManager.GetString("TXT_SCANNING", cultureInfo).ToString();
             this.txt_en.Text = resourceManager.GetString("TXT_EN", cultureInfo).ToString();
             this.txt_ro.Text = resourceManager.GetString("TXT_RO", cultureInfo).ToString();
             this.txt_ru.Text = resourceManager.GetString("TXT_RU", cultureInfo).ToString();
+            this.priceTitle.Text = resourceManager.GetString("TXT_TOTALPRICE", cultureInfo).ToString();
             this.listViewItem_txtleaveFbck.Text = resourceManager.GetString("TXT_LEAVE_FEEDBACK", cultureInfo).ToString();
             this.listViewItem_txtscan.Text = resourceManager.GetString("TXT_SCAN", cultureInfo).ToString();
+            
             if (data !=null)
             {
-
                 this.productTitle.Text = data.getTitle(language);
                 this.productDescription.Text = data.getDescription(language);
-               // this.productPrice.Text = string.Format( "{0} {1}",data.Price + data.PricePromo);
+                this.priceRetail.Text = string.Format(data.Price + " MDL");
+                if (data.PricePromo > 0 && data.PricePromo < data.Price)
+                {
+                    this.priceRetail.TextDecorations = TextDecorations.Strikethrough;
+                    this.priceRetail.FontSize = 24;
+                    this.pricePromo.Visibility = Visibility.Visible;
+                    
+                }
+                //this.productPrice.Text = string.Format( "{0} {1}",data.Price + data.PricePromo);
 
             }
            
@@ -150,21 +171,12 @@ namespace GlobalStore
         }
         private void ButtonClose_Click(object sender, RoutedEventArgs e)
         {
-            AcceptWindow acceptWindow = new AcceptWindow();
+            Application.Current.Shutdown();
+            Environment.Exit(0);
 
         }
 
-        private void ButtonOpenMenu_Click(object sender, RoutedEventArgs e)
-        {
-            /*ButtonOpenMenu.Visibility = Visibility.Collapsed;
-            ButtonCloseMenu.Visibility = Visibility.Visible;*/
-        }
 
-        private void ButtonCloseMenu_Click(object sender, RoutedEventArgs e)
-        {
-           /* ButtonOpenMenu.Visibility = Visibility.Visible;
-            ButtonCloseMenu.Visibility = Visibility.Collapsed;*/
-        }
 
         private void listViewTranslateEn_Selected(object sender, RoutedEventArgs e)
         {

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GlobalStore.UserPermisions"
         mc:Ignorable="d"
-        Title="AcceptWindow" Height="450" Width="423.828" WindowStyle="None">
+        Title="AcceptWindow" Height="301.271" Width="358.997">
     <Grid Margin="0,0,417,0" Background="#242222">
         <StackPanel>
             <TextBox x:Name="adminPassword" HorizontalAlignment="Left" Height="22" Margin="97,184,-97,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="0"/>
