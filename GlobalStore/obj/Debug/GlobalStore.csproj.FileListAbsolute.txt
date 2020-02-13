@@ -111,3 +111,4 @@ C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\ru\GlobalStore.res
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\GlobalStore.csproj.CopyComplete
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\GlobalStore.exe
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\GlobalStore.pdb
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
