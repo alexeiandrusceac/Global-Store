@@ -25,8 +25,19 @@ namespace GlobalStore.SerialPortManager
                     //if(_currentSerialSettings.PortNameCollection[i] ==  )
                 //_currentSerialSettings.PortName = _currentSerialSettings.PortNameCollection[0];
                 }*/
-                _currentSerialSettings.PortName = _currentSerialSettings.PortNameCollection[1];
+                for(int i=0; i<_currentSerialSettings.PortNameCollection.Length; i++)
+                {
+                    if (_currentSerialSettings.PortNameCollection[i].Contains("COM3"))
+                    {
+                        _currentSerialSettings.PortName = _currentSerialSettings.PortNameCollection[i];
+                    }
+                    /*else {
+                        throw new Exception().Message();
+                    }*/
+
+                }
         }
+               
 
 
         ~SerialPortManager()

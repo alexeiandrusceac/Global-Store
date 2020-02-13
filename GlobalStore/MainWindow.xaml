@@ -262,14 +262,15 @@
                     </Grid>
                 </extToolkit:BusyIndicator>
             </Grid>
-            <Grid x:Name="searchingGrid" Background="Silver" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" Visibility="Visible">
+            <Grid x:Name="searchingGrid" Background="Silver" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" Visibility="Hidden">
                 <StackPanel x:Name="searchRoot">
                     
                         <TextBlock Text="Value-Based Progress Bar"/>
-                        <ProgressBar x:Name="progressBar1" Value="0" Maximum="200" Margin="0,12"/>
-                        <RepeatButton Content="Press and hold" />
-                        <TextBlock x:Name="searchResult" TextWrapping="Wrap"></TextBlock>
-                    
+                    <TextBlock x:Name="searchResult"></TextBlock>
+
+                    <ProgressBar x:Name="progressBar" Value="0" Maximum="100"/>
+                        
+                        
                 </StackPanel>
             </Grid>
             <Grid x:Name="feedbackGrid" Visibility="Hidden">

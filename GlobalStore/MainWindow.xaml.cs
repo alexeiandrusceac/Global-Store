@@ -176,8 +176,6 @@ namespace GlobalStore
 
         }
 
-
-
         private void listViewTranslateEn_Selected(object sender, RoutedEventArgs e)
         {
             translateInterface(Entity.Language.EN);
