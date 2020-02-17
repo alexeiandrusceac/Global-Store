@@ -31,9 +31,7 @@ namespace GlobalStore.SerialPortManager
                     {
                         _currentSerialSettings.PortName = _currentSerialSettings.PortNameCollection[i];
                     }
-                    /*else {
-                        throw new Exception().Message();
-                    }*/
+                 
 
                 }
         }
