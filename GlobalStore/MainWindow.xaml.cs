@@ -1,14 +1,16 @@
 ﻿using GlobalStore.SerialPortManager;
 
 using System;
-
 using System.Text;
-
 using System.Windows;
 using GlobalStore.Entity;
 using GlobalStore.UserPermisions;
 using System.Resources;
 using System.Globalization;
+using GlobalStore.UpdateService;
+using System.Reflection;
+using MaterialDesignThemes.Wpf;
+using System.Windows.Forms;
 //using GlobalStore.SerialPortManager.SerialPortManager;
 
 namespace GlobalStore
@@ -16,8 +18,9 @@ namespace GlobalStore
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : Window, IUpdatable 
     {
+        
         private ResourceManager resourceManager;
         private SerialPortManager.SerialPortManager serialPortManager;
         WebInteraction webInteraction = new WebInteraction();
@@ -26,9 +29,27 @@ namespace GlobalStore
         Language language = new Language();
         Product thisProduct =  null;
         public bool InvokeRequired { get; private set; }
+
+        public string ApplicationName => "GlobalStore";
+
+        public string ApplicationID => "GlobalStore";
+
+        public Assembly ApplicationAssembly => Assembly.GetExecutingAssembly();
+
+        public Version ApplicationVersion => throw new NotImplementedException();
+
+        public Icon ApplicationIcon => throw new NotImplementedException();
+
+        public Uri UpdateXmlLocation => new Uri ("");
+
+        public Window Context =>  this;
+        
+        //private Updater updater = null;
         private CultureInfo cultureInfo;
         public MainWindow()
         {
+           /* updater = new  Updater(this);
+            updater.DoUpdate();*/
             language = Entity.Language.RO;
              InitializeComponent(); 
             
@@ -59,13 +80,13 @@ namespace GlobalStore
             serialPortManager = new SerialPortManager.SerialPortManager();
             SerialSettings mySerialSettings = serialPortManager.CurrentSerialSettings;
             serialPortManager.NewSerialDataRecieved += new EventHandler<SerialDataEventArgs>(serialPortManager_NewSerialDataRecieved);
-             serialPortManager.StartListening();
+            serialPortManager.StartListening();
           
 
         }
         private Rect GetWindowSize()
         {
-            Window myWindow = Application.Current.MainWindow;
+            Window myWindow = System.Windows.Application.Current.MainWindow;
             Rect myRect = new Rect();
             myRect.Height = myWindow.Height;
             myRect.Width = myWindow.Width;
@@ -77,6 +98,7 @@ namespace GlobalStore
         {
             if (this.InvokeRequired)
             {
+                System.Windows.Application.Current.MainWindow.Dispatcher.BeginInvoke(new EventHandler<SerialDataEventArgs>(serialPortManager_NewSerialDataRecieved), new object[] { sender, e });
                 return;
             }
 
@@ -151,7 +173,7 @@ namespace GlobalStore
 
         private void ButtonMaximize_Click(object sender,RoutedEventArgs e)
         {
-            Window thisWindow = Application.Current.MainWindow;
+            Window thisWindow = System.Windows.Application.Current.MainWindow;
             if (thisWindow.WindowState == WindowState.Maximized)
             {
                 thisWindow.WindowState = WindowState.Normal;
@@ -165,13 +187,13 @@ namespace GlobalStore
         }
         private void ButtonMinimize_Click(object sender, RoutedEventArgs e)
         {
-            Window thisWindow = Application.Current.MainWindow;
+            Window thisWindow = System.Windows.Application.Current.MainWindow;
             thisWindow.WindowState = WindowState.Minimized;
            
         }
         private void ButtonClose_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            System.Windows.Application.Current.Shutdown();
             Environment.Exit(0);
 
         }

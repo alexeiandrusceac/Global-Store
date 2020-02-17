@@ -54,6 +54,14 @@ D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Debug\ru\Glob
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Debug\GlobalStore.csproj.CopyComplete
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Debug\GlobalStore.exe
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Debug\GlobalStore.pdb
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\LoadingWindow.g.cs
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\MainWindow.g.cs
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\UpdateService\UpdateWindow.g.cs
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\UserPermisions\AcceptWindow.g.cs
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\App.g.cs
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\GlobalStore_Content.g.cs
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\GlobalStore_MarkupCompile.cache
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\GlobalStore_MarkupCompile.lref
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Debug\GlobalStore.exe.config
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Debug\GlobalStore.exe
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Debug\GlobalStore.pdb
@@ -77,6 +85,7 @@ C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Debug\MaterialDesignThem
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Debug\MaterialDesignThemes.Wpf.xml
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Debug\WpfAnimatedGif.xml
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
@@ -87,17 +96,10 @@ C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Debug\ro\Xceed.Wpf.Avalo
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
-C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\GlobalStore.csprojAssemblyReference.cache
-C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\LoadingWindow.g.cs
-C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\MainWindow.g.cs
-C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\UserPermisions\AcceptWindow.g.cs
-C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\App.g.cs
-C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\GlobalStore_Content.g.cs
-C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\GlobalStore_MarkupCompile.cache
-C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\GlobalStore_MarkupCompile.lref
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\App.baml
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\LoadingWindow.baml
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\MainWindow.baml
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\UpdateService\UpdateWindow.baml
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\UserPermisions\AcceptWindow.baml
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\GlobalStore.g.resources
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\GlobalStore.Properties.Resources.resources
@@ -111,4 +113,3 @@ C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\ru\GlobalStore.res
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\GlobalStore.csproj.CopyComplete
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\GlobalStore.exe
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Debug\GlobalStore.pdb
-C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll

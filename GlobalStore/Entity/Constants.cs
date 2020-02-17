@@ -18,7 +18,7 @@ namespace GlobalStore.Entity
         {
 
         }
-        public void getConstat()
+        public void getConstant()
         { 
 
         }
