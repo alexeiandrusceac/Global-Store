@@ -26,18 +26,20 @@ namespace GlobalStore
         public LoadingWindow()
         {
             InitializeComponent();
-            onshown();
+          //  onshown();
         }
 
         void onshown()
         {
-            Thread newWindowThread = new Thread(new ThreadStart(() =>
+            
+            /*Thread newWindowThread = new Thread(new ThreadStart(() =>
             {
+                Thread.Sleep(2000);
                 MainWindow mainWindow = new MainWindow();
 
                 mainWindow.Loaded += (sender, args) =>
                 {
-                    Application.Current.Dispatcher.Invoke(new Action(() => { this.Close(); }));
+                    Application.Current.Dispatcher.Invoke(new Action(() => { this.Close() ; }));
                 };
 
                 // When the window closes, shut down the dispatcher
@@ -46,14 +48,14 @@ namespace GlobalStore
 
                 mainWindow.Show();
                 // Start the Dispatcher Processing
-                System.Windows.Threading.Dispatcher.Run();
+                Dispatcher.Run();
             }));
 
             newWindowThread.SetApartmentState(ApartmentState.STA);
             // Make the thread a background thread
             newWindowThread.IsBackground = false;
             // Start the thread
-            newWindowThread.Start();
+            newWindowThread.Start();*/
         }
             
        

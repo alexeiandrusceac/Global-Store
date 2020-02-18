@@ -19,8 +19,9 @@ namespace GlobalStore.Entity
 
         public double Price { get; set; }
         public double PricePromo { get; set; }
-        public int QtySet { get; set; }
-        public int QtyBox { get; set; }
+        public double QtySet { get; set; }
+        public double PriceOffer { get; set; }
+        public double QtyBox { get; set; }
 
         public byte[] Image { get; set; }
         
@@ -42,10 +43,11 @@ namespace GlobalStore.Entity
                 TitleEN = (string)dataProduct.GetType().GetProperty("TitleEN").GetValue(dataProduct),
                 Barcode = (int)dataProduct.GetType().GetProperty("Barcode").GetValue(dataProduct),
                 Price = (double)dataProduct.GetType().GetProperty("Price").GetValue(dataProduct),
+                PriceOffer = (double)dataProduct.GetType().GetProperty("PriceOffer").GetValue(dataProduct),
                 Image = (byte[])dataProduct.GetType().GetProperty("Image").GetValue(dataProduct),
                 PricePromo = (double)dataProduct.GetType().GetProperty("PricePromo").GetValue(dataProduct),
-                QtySet = (int)dataProduct.GetType().GetProperty("QtySet").GetValue(dataProduct),
-                QtyBox = (int)dataProduct.GetType().GetProperty("QtyBox").GetValue(dataProduct),
+                QtySet = (double)dataProduct.GetType().GetProperty("QtySet").GetValue(dataProduct),
+                QtyBox = (double)dataProduct.GetType().GetProperty("QtyBox").GetValue(dataProduct),
                 DescriptionEN = (string)dataProduct.GetType().GetProperty("DescriptionEN").GetValue(dataProduct),
                 DescriptionRO = (string)dataProduct.GetType().GetProperty("DescriptionRO").GetValue(dataProduct),
                 DescriptionRU = (string)dataProduct.GetType().GetProperty("DescriptionRU").GetValue(dataProduct),

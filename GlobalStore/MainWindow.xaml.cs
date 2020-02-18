@@ -10,15 +10,13 @@ using System.Globalization;
 using GlobalStore.UpdateService;
 using System.Reflection;
 using MaterialDesignThemes.Wpf;
-using System.Windows.Forms;
-//using GlobalStore.SerialPortManager.SerialPortManager;
 
 namespace GlobalStore
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window, IUpdatable 
+    public partial class MainWindow : Window 
     {
         
         private ResourceManager resourceManager;
@@ -28,7 +26,7 @@ namespace GlobalStore
         AcceptWindow acceptWindow = new AcceptWindow();
         Language language = new Language();
         Product thisProduct =  null;
-        public bool InvokeRequired { get; private set; }
+       // public bool InvokeRequired { get; private set; }
 
         public string ApplicationName => "GlobalStore";
 
@@ -46,9 +44,11 @@ namespace GlobalStore
         
         //private Updater updater = null;
         private CultureInfo cultureInfo;
+       
+        
         public MainWindow()
         {
-           /* updater = new  Updater(this);
+           /* updater = new Updater(this);
             updater.DoUpdate();*/
             language = Entity.Language.RO;
              InitializeComponent(); 
@@ -96,12 +96,12 @@ namespace GlobalStore
 
         void serialPortManager_NewSerialDataRecieved(object sender, SerialDataEventArgs e)
         {
-            if (this.InvokeRequired)
-            {
-                System.Windows.Application.Current.MainWindow.Dispatcher.BeginInvoke(new EventHandler<SerialDataEventArgs>(serialPortManager_NewSerialDataRecieved), new object[] { sender, e });
-                return;
+           // if (this.InvokeRequired)
+            //{
+                //Dispatcher.BeginInvoke(new EventHandler<SerialDataEventArgs>(serialPortManager_NewSerialDataRecieved), new object[] { sender, e });
+            /*    return;
             }
-
+            */
             if (e.Data != null)
             {
                 this.LayoutRoot.Visibility = Visibility.Hidden;
@@ -126,7 +126,7 @@ namespace GlobalStore
             }
 
         }
-        private void StartProcess(object sender, RoutedEventArgs e)
+        /*private void StartProcess(object sender, RoutedEventArgs e)
         {
             //show BusyIndicator
             busyIndicator.IsBusy = true;
@@ -138,7 +138,7 @@ namespace GlobalStore
             }
             //hide BusyIndicator
             busyIndicator.IsBusy = false;
-        }
+        }*/
 
         private void refreshData(Product data, Language language)
         {
@@ -150,7 +150,7 @@ namespace GlobalStore
             this.txt_ro.Text = resourceManager.GetString("TXT_RO", cultureInfo).ToString();
             this.txt_ru.Text = resourceManager.GetString("TXT_RU", cultureInfo).ToString();
             this.priceTitle.Text = resourceManager.GetString("TXT_TOTALPRICE", cultureInfo).ToString();
-            this.listViewItem_txtleaveFbck.Text = resourceManager.GetString("TXT_LEAVE_FEEDBACK", cultureInfo).ToString();
+            //this.listViewItem_txtleaveFbck.Text = resourceManager.GetString("TXT_LEAVE_FEEDBACK", cultureInfo).ToString();
             this.listViewItem_txtscan.Text = resourceManager.GetString("TXT_SCAN", cultureInfo).ToString();
             
             if (data !=null)

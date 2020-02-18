@@ -89,7 +89,7 @@
                         <TextBlock x:Name="listViewItem_txtscan" Foreground="#242222" Margin="10" VerticalAlignment="Center"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem x:Name="listViewItemLeaveFeedback" Height="60" RenderTransformOrigin="0.5,0.5"  Selected="listViewItemLeaveFeedback_Selected">
+              <!--  <ListViewItem x:Name="listViewItemLeaveFeedback" Height="60" RenderTransformOrigin="0.5,0.5"  Selected="listViewItemLeaveFeedback_Selected">
                     <ListViewItem.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -102,7 +102,7 @@
                         <materialDesign:PackIcon Kind="Feedback" Foreground="#242222" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
                         <TextBlock x:Name="listViewItem_txtleaveFbck" Margin="10" Foreground="#242222" VerticalAlignment="Center" />
                     </StackPanel>
-                </ListViewItem>
+                </ListViewItem>-->
             </ListView>
             <ListView Height="381">
                 <ListViewItem x:Name="listViewTranslateEn" Height="60" RenderTransformOrigin="0.5,0.5"  Selected="listViewTranslateEn_Selected">
