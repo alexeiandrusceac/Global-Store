@@ -27,7 +27,7 @@ namespace GlobalStore
         Language language = new Language();
         Product thisProduct =  null;
        // public bool InvokeRequired { get; private set; }
-
+/*
         public string ApplicationName => "GlobalStore";
 
         public string ApplicationID => "GlobalStore";
@@ -41,7 +41,7 @@ namespace GlobalStore
         public Uri UpdateXmlLocation => new Uri ("");
 
         public Window Context =>  this;
-        
+        */
         //private Updater updater = null;
         private CultureInfo cultureInfo;
        
@@ -51,7 +51,7 @@ namespace GlobalStore
            /* updater = new Updater(this);
             updater.DoUpdate();*/
             language = Entity.Language.RO;
-             InitializeComponent(); 
+            InitializeComponent(); 
             
             resourceManager = new ResourceManager("GlobalStore.Localisation.Interface", typeof(MainWindow).Assembly);
             

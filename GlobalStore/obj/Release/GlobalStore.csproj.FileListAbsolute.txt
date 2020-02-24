@@ -57,4 +57,10 @@ C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Release\ru\GlobalStore.r
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Release\GlobalStore.csproj.CopyComplete
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Release\GlobalStore.exe
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Release\GlobalStore.pdb
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\System.IO.Ports.dll
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\System.IO.Ports.xml
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Release\GlobalStore.csprojAssemblyReference.cache
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\System.Threading.Tasks.Extensions.dll
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\System.Threading.Tasks.Extensions.xml
