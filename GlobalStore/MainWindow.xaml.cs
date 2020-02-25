@@ -10,6 +10,8 @@ using System.Globalization;
 using GlobalStore.UpdateService;
 using System.Reflection;
 using MaterialDesignThemes.Wpf;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace GlobalStore
 {
@@ -26,35 +28,16 @@ namespace GlobalStore
         AcceptWindow acceptWindow = new AcceptWindow();
         Language language = new Language();
         Product thisProduct =  null;
-       // public bool InvokeRequired { get; private set; }
-/*
-        public string ApplicationName => "GlobalStore";
-
-        public string ApplicationID => "GlobalStore";
-
-        public Assembly ApplicationAssembly => Assembly.GetExecutingAssembly();
-
-        public Version ApplicationVersion => throw new NotImplementedException();
-
-        public Icon ApplicationIcon => throw new NotImplementedException();
-
-        public Uri UpdateXmlLocation => new Uri ("");
-
-        public Window Context =>  this;
-        */
-        //private Updater updater = null;
         private CultureInfo cultureInfo;
-       
-        
+     
         public MainWindow()
         {
-           /* updater = new Updater(this);
-            updater.DoUpdate();*/
+          
             language = Entity.Language.RO;
-            InitializeComponent(); 
-            
+            InitializeComponent();
+            //System.Diagnostics.Debugger.Launch();
             resourceManager = new ResourceManager("GlobalStore.Localisation.Interface", typeof(MainWindow).Assembly);
-            
+            cultureInfo = CultureInfo.GetCultureInfo(language.ToString());
             translateInterface(language);
             populateData();
         }
@@ -96,33 +79,38 @@ namespace GlobalStore
 
         void serialPortManager_NewSerialDataRecieved(object sender, SerialDataEventArgs e)
         {
-           // if (this.InvokeRequired)
+            // if (this.InvokeRequired)
             //{
-                //Dispatcher.BeginInvoke(new EventHandler<SerialDataEventArgs>(serialPortManager_NewSerialDataRecieved), new object[] { sender, e });
+            //
             /*    return;
             }
             */
+            /*Task.Factory.StartNew(() =>
+            {
+                Dispatcher.BeginInvoke(new EventHandler<SerialDataEventArgs>(serialPortManager_NewSerialDataRecieved), new object[] { sender, e });
+            });
+            */
             if (e.Data != null)
             {
-                this.LayoutRoot.Visibility = Visibility.Hidden;
-                this.searchingGrid.Visibility = Visibility.Visible;
+               // this.LayoutRoot.Visibility = Visibility.Hidden;
+                //this.searchingGrid.Visibility = Visibility.Visible;
                 
-                string barcode = Encoding.ASCII.GetString(e.Data);
+                string barcode = /*Encoding.ASCII.GetString(e.Data);*/ "6938247111866";
                 thisProduct = webInteraction.getProductByBarcode(barcode.Trim());
                 if (thisProduct != null)
                 {
-                    // this.searchResult.Text = resourceManager.GetString("TXT_NORESULT", cultureInfo).ToString();
-                    this.searchingGrid.Visibility = Visibility.Hidden;
+                     /*this.searchResult.Text = resourceManager.GetString("TXT_NO_RESULT", cultureInfo).ToString();
+                    this.searchingGrid.Visibility = Visibility.Hidden;*/
                     refreshData(thisProduct, language);
                 }
                 else
                 {
-                    this.searchResult.Text = resourceManager.GetString("TXT_NORESULT", cultureInfo).ToString();
+                 /* this.searchResult.Text = resourceManager.GetString("TXT_NO_RESULT", cultureInfo).ToString();*/
                 }
             }
             else
             {
-                this.LayoutRoot.Visibility = Visibility.Visible;
+             /*this.LayoutRoot.Visibility = Visibility.Visible;*/
             }
 
         }
@@ -142,16 +130,16 @@ namespace GlobalStore
 
         private void refreshData(Product data, Language language)
         {
-            ResourceManager resourceManager = new ResourceManager("GlobalStore.Localisation.Interface", typeof(MainWindow).Assembly);
-             cultureInfo = CultureInfo.GetCultureInfo(language.ToString());
+           // resourceManager = new ResourceManager("GlobalStore.Localisation.Interface", typeof(MainWindow).Assembly);
+            
 
-            this.txt_scan.Text = resourceManager.GetString("TXT_SCANNING", cultureInfo).ToString();
-            this.txt_en.Text = resourceManager.GetString("TXT_EN", cultureInfo).ToString();
-            this.txt_ro.Text = resourceManager.GetString("TXT_RO", cultureInfo).ToString();
-            this.txt_ru.Text = resourceManager.GetString("TXT_RU", cultureInfo).ToString();
-            this.priceTitle.Text = resourceManager.GetString("TXT_TOTALPRICE", cultureInfo).ToString();
+            /*this.txt_scan.Text = resourceManager.GetString("TXT_SCANNING", cultureInfo).ToString();*/
+            txt_en.Text = resourceManager.GetString("TXT_EN", cultureInfo).ToString();
+            txt_ro.Text = resourceManager.GetString("TXT_RO", cultureInfo).ToString();
+            txt_ru.Text = resourceManager.GetString("TXT_RU", cultureInfo).ToString();
+            priceTitle.Text = resourceManager.GetString("TXT_TOTALPRICE", cultureInfo).ToString();
             //this.listViewItem_txtleaveFbck.Text = resourceManager.GetString("TXT_LEAVE_FEEDBACK", cultureInfo).ToString();
-            this.listViewItem_txtscan.Text = resourceManager.GetString("TXT_SCAN", cultureInfo).ToString();
+            listViewItem_txtscan.Text = resourceManager.GetString("TXT_SCAN", cultureInfo).ToString();
             
             if (data !=null)
             {
@@ -165,15 +153,14 @@ namespace GlobalStore
                     this.pricePromo.Visibility = Visibility.Visible;
                     
                 }
-                //this.productPrice.Text = string.Format( "{0} {1}",data.Price + data.PricePromo);
-
+               
             }
            
         }
 
         private void ButtonMaximize_Click(object sender,RoutedEventArgs e)
         {
-            Window thisWindow = System.Windows.Application.Current.MainWindow;
+            Window thisWindow = Application.Current.MainWindow;
             if (thisWindow.WindowState == WindowState.Maximized)
             {
                 thisWindow.WindowState = WindowState.Normal;
@@ -187,13 +174,13 @@ namespace GlobalStore
         }
         private void ButtonMinimize_Click(object sender, RoutedEventArgs e)
         {
-            Window thisWindow = System.Windows.Application.Current.MainWindow;
+            Window thisWindow = Application.Current.MainWindow;
             thisWindow.WindowState = WindowState.Minimized;
            
         }
         private void ButtonClose_Click(object sender, RoutedEventArgs e)
         {
-            System.Windows.Application.Current.Shutdown();
+            Application.Current.Shutdown();
             Environment.Exit(0);
 
         }

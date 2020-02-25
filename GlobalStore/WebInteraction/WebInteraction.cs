@@ -4,6 +4,9 @@ using System.IO;
 using System.Net;
 using System.Text;
 using Newtonsoft.Json;
+using System.Xml;
+using Newtonsoft.Json.Linq;
+
 namespace GlobalStore
 {
   public class WebInteraction
@@ -11,7 +14,8 @@ namespace GlobalStore
         public string BASEURL = "http://localhost:52191/GlobalStoreWebService.asmx/";
         public string GETBYBARCODE = "getProductByBarcode";
         public string GETADMIN = "getAdmin";
-        
+        public string GETMESSAGE = "getMsg";
+       
         public WebInteraction()
         { 
             
@@ -35,24 +39,32 @@ namespace GlobalStore
             return accept;
         }
 
-        public  Product getProductByBarcode(string barcode)
+        public Product getProductByBarcode(string barcode)
         {
             byte[] data = Encoding.GetEncoding(1251).GetBytes("barcode=" + barcode);
             Product product = new Product();
-            HttpWebRequest httpWebRequest =  (HttpWebRequest)WebRequest.Create(BASEURL+ GETBYBARCODE + "?");
+            HttpWebRequest httpWebRequest =  (HttpWebRequest)WebRequest.Create(BASEURL +   GETBYBARCODE+ "?");
             httpWebRequest.Method = "POST";
-            httpWebRequest.ContentType = "application/json";
-            httpWebRequest.ContentLength = data.Length;
-            httpWebRequest.Expect = "application/json";
+           // httpWebRequest.ContentLength = 0;
             
-            using (StreamReader streamReader = new StreamReader(httpWebRequest.GetResponse().GetResponseStream()))
+            httpWebRequest.ContentType = "application/x-www-form-urlencoded; charset=UTF-8";
+            httpWebRequest.ContentLength = data.Length;
+            httpWebRequest.Accept = "application/x-www-form-urlencoded";
+             Stream newStream = httpWebRequest.GetRequestStream();
+             newStream.Write(data, 0, data.Length);
+             newStream.Close();
+
+     
+            var httpResp = (HttpWebResponse)httpWebRequest.GetResponse();
+            using (StreamReader streamReader = new StreamReader(httpResp.GetResponseStream()))
             {
-                string result = streamReader.ReadToEnd();
-                product = (Product)JsonConvert.DeserializeObject(result);
+                 return Newtonsoft.Json.JsonConvert.DeserializeObject<Product>(streamReader.ReadToEnd());
+               // product = (Product)JsonConvert.DeserializeObject(streamReader.ReadToEnd());
             }
             
-            return product; 
+            //return result; 
         }
+        
 
     }
 }

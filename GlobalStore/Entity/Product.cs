@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,30 +9,146 @@ namespace GlobalStore.Entity
 {
     public class Product
     {
-
+        [JsonProperty(PropertyName = "ID")]
         public int ID { get; set; }
+        /// <summary>
+        /// Denumirea produsului in limba romana
+        /// </summary>
+        [JsonProperty(PropertyName = "TitleRO")]
         public string TitleRO { get; set; }
 
+        /// <summary>
+        /// Denumirea produsului in limba engleza
+        /// </summary>
+        [JsonProperty(PropertyName = "TitleEN")]
         public string TitleEN { get; set; }
-
+        /// <summary>
+        /// Denumirea produsului in limba rusa
+        /// </summary>
+        [JsonProperty(PropertyName ="TitleRU")]
         public string TitleRU { get; set; }
-        public int Barcode { get; set; }
+        /// <summary>
+        /// Codul de bare pentru unitatea de masura bucata
+        /// </summary>
+        [JsonProperty(PropertyName ="BarcodeBuc")]
+        public string BarcodeBuc { get; set; }
+        /// <summary>
+        /// Codul de bare pentru unitatea de masura set
+        /// </summary>
+        [JsonProperty(PropertyName ="BarcodeSet")]
+        public string BarcodeSet { get; set; }
+        /// <summary>
+        /// Codul de bare pentru unitatea de masura cutie
+        /// </summary>
+        [JsonProperty(PropertyName ="BarcodeBox")]
+        public string BarcodeBox { get; set; }
 
+        /// <summary>
+        /// Pretul produsul de retail
+        /// </summary>
+        [JsonProperty(PropertyName ="Price")]
         public double Price { get; set; }
-        public double PricePromo { get; set; }
-        public double QtySet { get; set; }
-        public double PriceOffer { get; set; }
-        public double QtyBox { get; set; }
-
-        public byte[] Image { get; set; }
-        
-        public string DescriptionEN { get; set; }
-        public string DescriptionRU { get; set; }
-        public string DescriptionRO { get; set; }
+        /// <summary>
+        /// Pretul produsului angro
+        /// </summary>
+        [JsonProperty(PropertyName = "PriceAngro")]
         public double PriceAngro { get; set; }
-
-        public string Model { get; set; }
+        /// <summary>
+        /// Numarul de produse in stoc de partea angro
+        /// </summary>
+        [JsonProperty(PropertyName ="StocReal")]
+        public double StocReal { get; set; }
+        /// <summary>
+        /// Tara produsului 
+        /// </summary>
+        [JsonProperty(PropertyName ="Country")]
         public string Country { get; set; }
+        /// <summary>
+        /// Pretul promotional pentru retail
+        /// </summary>
+
+        [JsonProperty(PropertyName ="PricePromo")] 
+        public double PricePromo { get; set; }
+        /// <summary>
+        /// Numarul de produse in set
+        /// </summary>
+        [JsonProperty(PropertyName ="QtySet")]
+        public double QtySet { get; set; }
+        /// <summary>
+        /// Numarul de produse in cutie
+        /// </summary>
+        [JsonProperty(PropertyName ="QtyBox")]
+        public double QtyBox { get; set; }
+        /// <summary>
+        /// Modelul produsului
+        /// </summary>
+        [JsonProperty(PropertyName ="Model")]
+        public string Model { get; set; }
+        /// <summary>
+        /// Imaginea produsului
+        /// </summary>
+        [JsonProperty(PropertyName ="Image")]
+        public byte[] Image { get; set; }
+        /// <summary>
+        /// Denumirea imaginii produsului
+        /// </summary>
+        [JsonProperty(PropertyName ="ImageTitle")]
+        public string ImageTitle { get; set; }
+        /// <summary>
+        /// Brandul produsului
+        /// </summary>
+        [JsonProperty(PropertyName ="Brand")]
+        public string Brand { get; set; }
+        /// <summary>
+        /// Descrierea produsului in limba engleza
+        /// </summary>
+        [JsonProperty(PropertyName ="DescriptionEN")]
+        public string DescriptionEN { get; set; }
+        /// <summary>
+        /// Descrierea produsului in limba rusa
+        /// </summary>
+        [JsonProperty(PropertyName ="DescriptionRU")]
+        public string DescriptionRU { get; set; }
+        /// <summary>
+        /// Descrierea produsului in limba romana
+        /// </summary>
+        [JsonProperty(PropertyName ="DescriptionRO")]
+        public string DescriptionRO { get; set; }
+        /// <summary>
+        /// Numarul de produse in stoc pe partea retail
+        /// </summary>
+        [JsonProperty(PropertyName ="StocRetail")]
+        public double StocRetail { get; set; }
+        /// <summary>
+        /// Actia unitate masura
+        /// </summary>
+        [JsonProperty(PropertyName ="DiscountUnit")]
+        public string DiscountUnit { get; set; }
+        /// <summary>
+        /// Actia cantitate 
+        /// </summary>
+        [JsonProperty(PropertyName ="DiscountQuantity")]
+        public double DiscountQuantity { get; set; }
+        /// <summary>
+        /// Actia procent de reducere
+        /// </summary>
+        [JsonProperty(PropertyName ="DiscountPercent")]
+        public double DiscountPercent { get; set; }
+        /// <summary>
+        /// Pretul la actie
+        /// </summary>
+        [JsonProperty(PropertyName ="DiscountPrice")]
+        public double DiscountPrice { get; set; }
+
+        /// <summary>
+        /// Unitatea de masura cu care se vinde produsul
+        /// </summary>
+        [JsonProperty(PropertyName ="UnitSaleBuc")]
+        public int UnitSaleBuc { get; set; }
+        [JsonProperty(PropertyName ="UnitSaleSet")]
+        public int UnitSaleSet { get; set; }
+        [JsonProperty(PropertyName ="UnitSaleBox")]
+        public int UnitSaleBox { get; set; }
 
         public Product convertToProductFromObj(object dataProduct)
         {
@@ -41,9 +158,11 @@ namespace GlobalStore.Entity
                 TitleRO = (string)dataProduct.GetType().GetProperty("TitleRO").GetValue(dataProduct),
                 TitleRU = (string)dataProduct.GetType().GetProperty("TitleRU").GetValue(dataProduct),
                 TitleEN = (string)dataProduct.GetType().GetProperty("TitleEN").GetValue(dataProduct),
-                Barcode = (int)dataProduct.GetType().GetProperty("Barcode").GetValue(dataProduct),
+                BarcodeBuc = (string)dataProduct.GetType().GetProperty("BarcodeBuc").GetValue(dataProduct),
+                BarcodeBox = (string)dataProduct.GetType().GetProperty("BarcodeBox").GetValue(dataProduct),
+                BarcodeSet = (string)dataProduct.GetType().GetProperty("BarcodeSet").GetValue(dataProduct),
                 Price = (double)dataProduct.GetType().GetProperty("Price").GetValue(dataProduct),
-                PriceOffer = (double)dataProduct.GetType().GetProperty("PriceOffer").GetValue(dataProduct),
+                DiscountPrice = (double)dataProduct.GetType().GetProperty("DiscountPrice").GetValue(dataProduct),
                 Image = (byte[])dataProduct.GetType().GetProperty("Image").GetValue(dataProduct),
                 PricePromo = (double)dataProduct.GetType().GetProperty("PricePromo").GetValue(dataProduct),
                 QtySet = (double)dataProduct.GetType().GetProperty("QtySet").GetValue(dataProduct),

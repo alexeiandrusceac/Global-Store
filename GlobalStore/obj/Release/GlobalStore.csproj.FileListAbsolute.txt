@@ -8,6 +8,9 @@ C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\FontAwesome.WPF.
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\MaterialDesignColors.dll
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\MaterialDesignThemes.Wpf.dll
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\Newtonsoft.Json.dll
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\System.IO.Ports.dll
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\System.Threading.Tasks.Extensions.dll
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\WpfAnimatedGif.dll
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\WPFtoolkitFramework.dll
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\Xceed.Wpf.AvalonDock.dll
@@ -20,6 +23,9 @@ C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\MaterialDesignCo
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\MaterialDesignThemes.Wpf.pdb
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\MaterialDesignThemes.Wpf.xml
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\Newtonsoft.Json.xml
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\System.IO.Ports.xml
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\System.Threading.Tasks.Extensions.xml
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\WpfAnimatedGif.xml
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\de\Xceed.Wpf.AvalonDock.resources.dll
@@ -57,10 +63,4 @@ C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Release\ru\GlobalStore.r
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Release\GlobalStore.csproj.CopyComplete
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Release\GlobalStore.exe
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Release\GlobalStore.pdb
-C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\System.IO.Ports.dll
-C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\System.IO.Ports.xml
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Release\GlobalStore.csprojAssemblyReference.cache
-C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\System.Threading.Tasks.Extensions.dll
-C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\System.Threading.Tasks.Extensions.xml

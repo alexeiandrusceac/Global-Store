@@ -16,11 +16,7 @@ namespace GlobalStore.SerialPortManager
 
             // If serial ports is found, we select the first found
             if (_currentSerialSettings.PortNameCollection.Length > 0)
-                /*for (int i= 0; i < _currentSerialSettings.PortNameCollection.Length; i++)
-                {
-                    //if(_currentSerialSettings.PortNameCollection[i] ==  )
-                //_currentSerialSettings.PortName = _currentSerialSettings.PortNameCollection[0];
-                }*/
+               
                 for(int i=0; i<_currentSerialSettings.PortNameCollection.Length; i++)
                 {
                     if (_currentSerialSettings.PortNameCollection[i].Contains("COM3"))
