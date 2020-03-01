@@ -10,7 +10,7 @@ using System.Diagnostics;
 namespace GlobalStore.UpdateService
 {
     public class Updater
-    {
+    {/*
         private BackgroundWorker bgWorker;
         //private AcceptUpdateForm form;
       
@@ -69,7 +69,7 @@ namespace GlobalStore.UpdateService
             Process.Start(processStartInfo);
         }
 
-
+        */
 
     }
 }

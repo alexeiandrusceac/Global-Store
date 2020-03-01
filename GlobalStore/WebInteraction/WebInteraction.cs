@@ -11,7 +11,7 @@ namespace GlobalStore
 {
   public class WebInteraction
     {
-        public string BASEURL = "http://localhost:52191/GlobalStoreWebService.asmx/";
+        public string BASEURL = "http://localhost:63434/GlobalStoreWebService.asmx/";
         public string GETBYBARCODE = "getProductByBarcode";
         public string GETADMIN = "getAdmin";
         public string GETMESSAGE = "getMsg";
@@ -41,28 +41,29 @@ namespace GlobalStore
 
         public Product getProductByBarcode(string barcode)
         {
-            byte[] data = Encoding.GetEncoding(1251).GetBytes("barcode=" + barcode);
-            Product product = new Product();
-            HttpWebRequest httpWebRequest =  (HttpWebRequest)WebRequest.Create(BASEURL +   GETBYBARCODE+ "?");
-            httpWebRequest.Method = "POST";
-           // httpWebRequest.ContentLength = 0;
-            
-            httpWebRequest.ContentType = "application/x-www-form-urlencoded; charset=UTF-8";
-            httpWebRequest.ContentLength = data.Length;
-            httpWebRequest.Accept = "application/x-www-form-urlencoded";
-             Stream newStream = httpWebRequest.GetRequestStream();
-             newStream.Write(data, 0, data.Length);
-             newStream.Close();
+              byte[] data = Encoding.GetEncoding(1251).GetBytes("barcode=" + barcode);
+               Product product = new Product();
+               HttpWebRequest httpWebRequest =  (HttpWebRequest)WebRequest.Create(BASEURL +   GETBYBARCODE+ "?");
+               httpWebRequest.Method = "POST";
+             
 
-     
-            var httpResp = (HttpWebResponse)httpWebRequest.GetResponse();
-            using (StreamReader streamReader = new StreamReader(httpResp.GetResponseStream()))
-            {
-                 return Newtonsoft.Json.JsonConvert.DeserializeObject<Product>(streamReader.ReadToEnd());
-               // product = (Product)JsonConvert.DeserializeObject(streamReader.ReadToEnd());
-            }
+               httpWebRequest.ContentType = "application/x-www-form-urlencoded; charset=UTF-8";
+               httpWebRequest.ContentLength = data.Length;
+               httpWebRequest.Accept = "application/x-www-form-urlencoded";
+                Stream newStream = httpWebRequest.GetRequestStream();
+                newStream.Write(data, 0, data.Length);
+                newStream.Close();
+
+
+               var httpResp = (HttpWebResponse)httpWebRequest.GetResponse();
+               using (StreamReader streamReader = new StreamReader(httpResp.GetResponseStream()))
+               {
+                    return Newtonsoft.Json.JsonConvert.DeserializeObject<Product>(streamReader.ReadToEnd());
+
+               }
+
+              
             
-            //return result; 
         }
         
 
