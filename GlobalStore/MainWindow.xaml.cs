@@ -13,6 +13,11 @@ using MaterialDesignThemes.Wpf;
 using System.Threading;
 using System.Threading.Tasks;
 
+
+using System.IO;
+using System.Windows.Media.Imaging;
+using System.Windows.Controls;
+
 namespace GlobalStore
 {
     /// <summary>
@@ -29,13 +34,14 @@ namespace GlobalStore
         Language language = new Language();
         Product thisProduct =  null;
         private CultureInfo cultureInfo;
-     
+        private bool isrefreshed = false;
         public MainWindow()
         {
           
             language = Entity.Language.RO;
             InitializeComponent();
             //System.Diagnostics.Debugger.Launch();
+            getData(/* sender,  e*/);
             resourceManager = new ResourceManager("GlobalStore.Localisation.Interface", typeof(MainWindow).Assembly);
             cultureInfo = CultureInfo.GetCultureInfo(language.ToString());
             translateInterface(language);
@@ -77,41 +83,39 @@ namespace GlobalStore
             return myRect;
         }
 
-        void serialPortManager_NewSerialDataRecieved(object sender, SerialDataEventArgs e)
+        void getData(/*object sender, SerialDataEventArgs e*/)
         {
-            // if (this.InvokeRequired)
-            //{
-            //
-            /*    return;
-            }
-            */
-            /*Task.Factory.StartNew(() =>
-            {
-                Dispatcher.BeginInvoke(new EventHandler<SerialDataEventArgs>(serialPortManager_NewSerialDataRecieved), new object[] { sender, e });
-            });
-            */
-            if (e.Data != null)
-            {
-               // this.LayoutRoot.Visibility = Visibility.Hidden;
+            
+            //Dispatcher.BeginInvoke(new EventHandler<SerialDataEventArgs>(serialPortManager_NewSerialDataRecieved), new object[] { sender, e });
+
+            /*if (e.Data != null)
+            {*/
+                // this.LayoutRoot.Visibility = Visibility.Hidden;
                 //this.searchingGrid.Visibility = Visibility.Visible;
                 
-                string barcode = /*Encoding.ASCII.GetString(e.Data);*/ "6938247111866";
+                string barcode = "6938247111866" /*Encoding.ASCII.GetString(e.Data);*/ ;
                 thisProduct = webInteraction.getProductByBarcode(barcode.Trim());
                 if (thisProduct != null)
                 {
-                     /*this.searchResult.Text = resourceManager.GetString("TXT_NO_RESULT", cultureInfo).ToString();
-                    this.searchingGrid.Visibility = Visibility.Hidden;*/
+                    /*this.searchResult.Text = resourceManager.GetString("TXT_NO_RESULT", cultureInfo).ToString();
+                     * 
+                   this.searchingGrid.Visibility = Visibility.Hidden;*/
                     refreshData(thisProduct, language);
                 }
-                else
-                {
-                 /* this.searchResult.Text = resourceManager.GetString("TXT_NO_RESULT", cultureInfo).ToString();*/
-                }
-            }
+               /* else
+                {*/
+                    /* this.searchResult.Text = resourceManager.GetString("TXT_NO_RESULT", cultureInfo).ToString();*/
+                //}
+           // }
             else
             {
-             /*this.LayoutRoot.Visibility = Visibility.Visible;*/
+                /*this.LayoutRoot.Visibility = Visibility.Visible;*/
             }
+        }
+        void serialPortManager_NewSerialDataRecieved(object sender, SerialDataEventArgs e)
+        {
+
+            //getData(sender, e);
 
         }
         /*private void StartProcess(object sender, RoutedEventArgs e)
@@ -130,10 +134,14 @@ namespace GlobalStore
 
         private void refreshData(Product data, Language language)
         {
-           // resourceManager = new ResourceManager("GlobalStore.Localisation.Interface", typeof(MainWindow).Assembly);
+             resourceManager = new ResourceManager("GlobalStore.Localisation.Interface", typeof(MainWindow).Assembly);
+           // object sender; SerialDataEventArgs e;
             
-
-            /*this.txt_scan.Text = resourceManager.GetString("TXT_SCANNING", cultureInfo).ToString();*/
+                
+            
+            
+                /*this.txt_scan.Text = resourceManager.GetString("TXT_SCANNING", cultureInfo).ToString();*/
+            
             txt_en.Text = resourceManager.GetString("TXT_EN", cultureInfo).ToString();
             txt_ro.Text = resourceManager.GetString("TXT_RO", cultureInfo).ToString();
             txt_ru.Text = resourceManager.GetString("TXT_RU", cultureInfo).ToString();
@@ -143,6 +151,8 @@ namespace GlobalStore
             
             if (data !=null)
             {
+               //  frombase64toImage(data.Image);decomenteaza rindul asta
+                //ShowImage(frombase64toImage(data.Image));
                 this.productTitle.Text = data.getTitle(language);
                 this.productDescription.Text = data.getDescription(language);
                 this.priceRetail.Text = string.Format(data.Price + " MDL");
@@ -158,6 +168,34 @@ namespace GlobalStore
            
         }
 
+        private void ShowImage(System.Drawing.Image image)
+        {
+            using (var stream = new MemoryStream())
+            {
+                //image.Save(stream, System.Drawing.Imaging.ImageFormat.Bmp);
+                stream.Position = 0;
+
+                var bmpImgage = new System.Windows.Media.Imaging.BitmapImage();
+                bmpImgage.BeginInit();
+                bmpImgage.CacheOption = BitmapCacheOption.OnLoad;
+                bmpImgage.StreamSource = stream;
+                bmpImgage.EndInit();
+
+                this.mainImage.Source = bmpImgage;
+            }
+        }
+        public void frombase64toImage(string image64 )
+        {
+            byte[] binaryData = Convert.FromBase64String(image64);
+
+            BitmapImage bi = new BitmapImage();
+            bi.BeginInit();
+            bi.StreamSource = new MemoryStream(binaryData);
+            bi.EndInit();
+
+            Image img = new Image();
+            this.mainImage.Source = bi;
+        }
         private void ButtonMaximize_Click(object sender,RoutedEventArgs e)
         {
             Window thisWindow = Application.Current.MainWindow;

@@ -9,12 +9,13 @@ namespace GlobalStore.UpdateService
 {
     public interface IUpdatable
     {
+        /*
         string ApplicationName { get;  }
         string ApplicationID { get;  }
         Assembly ApplicationAssembly { get;  }
         Version ApplicationVersion { get; }
         Icon ApplicationIcon { get;  }
         Uri UpdateXmlLocation { get;  }
-        Window Context { get; } 
+        Window Context { get; } */
     }
 }

@@ -6,9 +6,10 @@
         xmlns:local="clr-namespace:GlobalStore"
         mc:Ignorable="d"
         xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        
         xmlns:extToolkit="http://schemas.xceed.com/wpf/xaml/toolkit"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        xmlns:fa="http://schemas.fontawesome.io/icons/" Height="600" Width="1024"  WindowStartupLocation="CenterScreen">
+        xmlns:fa="http://schemas.fontawesome.io/icons/"     WindowStartupLocation="CenterScreen">
     <WindowChrome.WindowChrome>
         <WindowChrome CaptionHeight="0"/>
     </WindowChrome.WindowChrome>
@@ -165,9 +166,7 @@
                 </Grid.ColumnDefinitions>
 
                 <Grid Grid.Column="1" Background="#242222">
-                    <StackPanel Margin="0,0,0,374">
-                        <Image x:Name="mainImage" Height="146" VerticalAlignment="Top"  Stretch="UniformToFill"/>
-                    </StackPanel>
+                    <StackPanel Margin="0,0,0,374"/>
                     <StackPanel Margin="0,150,0,78">
                         <TextBlock x:Name="productTitle"  Foreground="White" FontSize="28" FontFamily="Nirmala UI Semilight"  VerticalAlignment="Top" RenderTransformOrigin="0.488,-1.432"/>
 
@@ -201,7 +200,7 @@
                         <Grid.Effect>
                             <DropShadowEffect BlurRadius="20" Color="#FFEEEEEE" ShadowDepth="1"/>
                         </Grid.Effect>
-                        <Image  Stretch="UniformToFill"/>
+                        <Image x:Name="mainImage" Stretch="UniformToFill"/>
                         <StackPanel Orientation="Horizontal" Margin="5" HorizontalAlignment="Right" VerticalAlignment="Bottom">
                             <!-- <materialDesign:PackIcon Kind="Heart" Foreground="#FFFBFBFB"/>
                             <TextBlock Text="25" Foreground="#FFFBFBFB"/>-->
@@ -301,16 +300,5 @@
 
         </Grid>
 
-        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="50" HorizontalAlignment="Right" Width="100" Grid.Column="2">
-            <Button  x:Name="ButtonMinimize" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="30" Height="30" Padding="0" Background="{x:Null}" BorderBrush="{x:Null}" Click="ButtonMinimize_Click">
-                <materialDesign:PackIcon Kind="WindowMinimize"/>
-            </Button>
-            <Button x:Name="ButtonMaximize" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="30" Height="30" Padding="0"  Background="{x:Null}" BorderBrush="{x:Null}" Click="ButtonMaximize_Click">
-                <materialDesign:PackIcon Kind="WindowMaximize"/>
-            </Button>
-            <Button x:Name="ButtonClose" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="30" Height="30" Padding="0" Background="{x:Null}" BorderBrush="{x:Null}" Click="ButtonClose_Click">
-                <materialDesign:PackIcon Kind="WindowClose"/>
-            </Button>
-        </StackPanel>
     </Grid>
 </Window>
