@@ -163,7 +163,7 @@ namespace GlobalStore.Entity
                 BarcodeSet = (string)dataProduct.GetType().GetProperty("BarcodeSet").GetValue(dataProduct),
                 Price = (double)dataProduct.GetType().GetProperty("Price").GetValue(dataProduct),
                 DiscountPrice = (double)dataProduct.GetType().GetProperty("DiscountPrice").GetValue(dataProduct),
-                Image = (string)dataProduct.GetType().GetProperty("Image").GetValue(dataProduct),
+                Image = (string[])dataProduct.GetType().GetProperty("Image").GetValue(dataProduct),
                 PricePromo = (double)dataProduct.GetType().GetProperty("PricePromo").GetValue(dataProduct),
                 QtySet = (double)dataProduct.GetType().GetProperty("QtySet").GetValue(dataProduct),
                 QtyBox = (double)dataProduct.GetType().GetProperty("QtyBox").GetValue(dataProduct),

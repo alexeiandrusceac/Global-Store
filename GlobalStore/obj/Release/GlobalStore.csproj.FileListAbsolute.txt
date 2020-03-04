@@ -104,7 +104,6 @@ D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Release\ro\Xc
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Release\ru\Xceed.Wpf.AvalonDock.resources.dll
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Release\sv\Xceed.Wpf.AvalonDock.resources.dll
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Release\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
-D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\GlobalStore.csprojAssemblyReference.cache
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\LoadingWindow.g.cs
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\MainWindow.g.cs
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\UpdateService\UpdateWindow.g.cs
@@ -136,3 +135,4 @@ D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Release\Globa
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\GlobalStore.TrustInfo.xml
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\GlobalStore.exe.manifest
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\GlobalStore.application
+D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\GlobalStore.csprojAssemblyReference.cache

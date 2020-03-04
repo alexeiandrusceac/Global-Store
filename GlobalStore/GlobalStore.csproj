@@ -183,6 +183,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Resource Include="logo.png" />
     <EmbeddedResource Include="Localisation\Interface.en.resx" />
     <EmbeddedResource Include="Localisation\Interface.ro.resx" />
     <EmbeddedResource Include="Localisation\Interface.ru.resx" />

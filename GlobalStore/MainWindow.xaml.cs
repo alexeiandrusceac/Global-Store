@@ -151,7 +151,7 @@ namespace GlobalStore
             
             if (data !=null)
             {
-                 frombase64toImage(data.Image);
+               //  frombase64toImage(data.Image);decomenteaza rindul asta
                 //ShowImage(frombase64toImage(data.Image));
                 this.productTitle.Text = data.getTitle(language);
                 this.productDescription.Text = data.getDescription(language);
