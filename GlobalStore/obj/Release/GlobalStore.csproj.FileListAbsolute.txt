@@ -136,3 +136,4 @@ D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\Globa
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\GlobalStore.exe.manifest
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\GlobalStore.application
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\GlobalStore.csprojAssemblyReference.cache
+D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\GlobalStore.csproj.CoreCompileInputs.cache
