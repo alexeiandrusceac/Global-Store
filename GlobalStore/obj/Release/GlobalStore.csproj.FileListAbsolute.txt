@@ -135,5 +135,9 @@ D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Release\Globa
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\GlobalStore.TrustInfo.xml
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\GlobalStore.exe.manifest
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\GlobalStore.application
-D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\GlobalStore.csprojAssemblyReference.cache
-D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\GlobalStore.csproj.CoreCompileInputs.cache
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\GlobalStore.exe.manifest
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\GlobalStore.application
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\bin\Release\System.Drawing.Common.dll
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Release\GlobalStore.TrustInfo.xml
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Release\GlobalStore.exe.manifest
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Release\GlobalStore.application
