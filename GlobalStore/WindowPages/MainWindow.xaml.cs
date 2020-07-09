@@ -41,7 +41,7 @@ namespace GlobalStore
             language = Entity.Language.RO;
             InitializeComponent();
             //System.Diagnostics.Debugger.Launch();
-            getData(/* sender,  e*/);
+            //getData(/* sender,  e*/);
             resourceManager = new ResourceManager("GlobalStore.Localisation.Interface", typeof(MainWindow).Assembly);
             cultureInfo = CultureInfo.GetCultureInfo(language.ToString());
             translateInterface(language);
@@ -66,11 +66,11 @@ namespace GlobalStore
 
         void populateData()
         {
-            serialPortManager = new SerialPortManager.SerialPortManager();
+        /*    serialPortManager = new SerialPortManager.SerialPortManager();
             SerialSettings mySerialSettings = serialPortManager.CurrentSerialSettings;
             serialPortManager.NewSerialDataRecieved += new EventHandler<SerialDataEventArgs>(serialPortManager_NewSerialDataRecieved);
             serialPortManager.StartListening();
-          
+          */
 
         }
         private Rect GetWindowSize()
@@ -85,32 +85,33 @@ namespace GlobalStore
 
         void getData(/*object sender, SerialDataEventArgs e*/)
         {
-            
+
             //Dispatcher.BeginInvoke(new EventHandler<SerialDataEventArgs>(serialPortManager_NewSerialDataRecieved), new object[] { sender, e });
 
             /*if (e.Data != null)
             {*/
-                // this.LayoutRoot.Visibility = Visibility.Hidden;
-                //this.searchingGrid.Visibility = Visibility.Visible;
-                
-                string barcode = "6938247111866" /*Encoding.ASCII.GetString(e.Data);*/ ;
-                thisProduct = webInteraction.getProductByBarcode(barcode.Trim());
+            // this.LayoutRoot.Visibility = Visibility.Hidden;
+            //this.searchingGrid.Visibility = Visibility.Visible;
+            /*this.searchResult.Text = resourceManager.GetString("TXT_NO_RESULT", cultureInfo).ToString();
+                 * 
+               this.searchingGrid.Visibility = Visibility.Hidden;*/
+            string barcode = "6938247111866" /*Encoding.ASCII.GetString(e.Data);*/ ;
+               /* thisProduct = webInteraction.getProductByBarcode(barcode.Trim());
                 if (thisProduct != null)
                 {
-                    /*this.searchResult.Text = resourceManager.GetString("TXT_NO_RESULT", cultureInfo).ToString();
-                     * 
-                   this.searchingGrid.Visibility = Visibility.Hidden;*/
+                    
                     refreshData(thisProduct, language);
-                }
+                }*/
                /* else
                 {*/
                     /* this.searchResult.Text = resourceManager.GetString("TXT_NO_RESULT", cultureInfo).ToString();*/
                 //}
            // }
-            else
+           /* else
             {
-                /*this.LayoutRoot.Visibility = Visibility.Visible;*/
+                this.LayoutRoot.Visibility = Visibility.Visible;
             }
+            */
         }
         void serialPortManager_NewSerialDataRecieved(object sender, SerialDataEventArgs e)
         {

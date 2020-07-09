@@ -8,7 +8,7 @@
         Title="LoadingWindow" Height="1000" Width="1000">
     <Grid>
         <StackPanel Background="#242222">
-            <Image Source="Resources/Global Store.png"></Image>
+            <Image Source="/GlobalStore;component/Resources/gs_loading.png" Stretch="Fill" Height="976"></Image>
         </StackPanel>
     </Grid>
 </Window>

@@ -185,9 +185,8 @@ C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\alexeiandrusceac\Global-Stor
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\alexeiandrusceac\Global-Store\GlobalStore\bin\Release\ru\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\alexeiandrusceac\Global-Store\GlobalStore\bin\Release\sv\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\alexeiandrusceac\Global-Store\GlobalStore\bin\Release\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
-C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\alexeiandrusceac\Global-Store\GlobalStore\obj\Release\GlobalStore.csprojAssemblyReference.cache
-C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\alexeiandrusceac\Global-Store\GlobalStore\obj\Release\LoadingWindow.g.cs
-C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\alexeiandrusceac\Global-Store\GlobalStore\obj\Release\MainWindow.g.cs
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\alexeiandrusceac\Global-Store\GlobalStore\obj\Release\WindowPages\LoadingWindow.g.cs
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\alexeiandrusceac\Global-Store\GlobalStore\obj\Release\WindowPages\MainWindow.g.cs
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\alexeiandrusceac\Global-Store\GlobalStore\obj\Release\UpdateService\UpdateWindow.g.cs
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\alexeiandrusceac\Global-Store\GlobalStore\obj\Release\UserPermisions\AcceptWindow.g.cs
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\alexeiandrusceac\Global-Store\GlobalStore\obj\Release\App.g.cs
@@ -195,8 +194,8 @@ C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\alexeiandrusceac\Global-Stor
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\alexeiandrusceac\Global-Store\GlobalStore\obj\Release\GlobalStore_MarkupCompile.cache
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\alexeiandrusceac\Global-Store\GlobalStore\obj\Release\GlobalStore_MarkupCompile.lref
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\alexeiandrusceac\Global-Store\GlobalStore\obj\Release\App.baml
-C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\alexeiandrusceac\Global-Store\GlobalStore\obj\Release\LoadingWindow.baml
-C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\alexeiandrusceac\Global-Store\GlobalStore\obj\Release\MainWindow.baml
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\alexeiandrusceac\Global-Store\GlobalStore\obj\Release\WindowPages\LoadingWindow.baml
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\alexeiandrusceac\Global-Store\GlobalStore\obj\Release\WindowPages\MainWindow.baml
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\alexeiandrusceac\Global-Store\GlobalStore\obj\Release\UpdateService\UpdateWindow.baml
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\alexeiandrusceac\Global-Store\GlobalStore\obj\Release\UserPermisions\AcceptWindow.baml
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\alexeiandrusceac\Global-Store\GlobalStore\obj\Release\GlobalStore.g.resources
@@ -215,3 +214,4 @@ C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\alexeiandrusceac\Global-Stor
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\alexeiandrusceac\Global-Store\GlobalStore\obj\Release\GlobalStore.csproj.CopyComplete
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\alexeiandrusceac\Global-Store\GlobalStore\obj\Release\GlobalStore.exe
 C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\alexeiandrusceac\Global-Store\GlobalStore\obj\Release\GlobalStore.pdb
+C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\alexeiandrusceac\Global-Store\GlobalStore\obj\Release\GlobalStore.csprojAssemblyReference.cache

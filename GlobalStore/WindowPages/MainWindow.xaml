@@ -6,13 +6,11 @@
         xmlns:local="clr-namespace:GlobalStore"
         mc:Ignorable="d"
         xmlns:gif="http://wpfanimatedgif.codeplex.com"
-        
+        Style="{StaticResource WindowStyle}"
         xmlns:extToolkit="http://schemas.xceed.com/wpf/xaml/toolkit"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:fa="http://schemas.fontawesome.io/icons/"     WindowStartupLocation="CenterScreen">
-    <WindowChrome.WindowChrome>
-        <WindowChrome CaptionHeight="0"/>
-    </WindowChrome.WindowChrome>
+   
     <Window.Resources>
         <Storyboard x:Key="OpenMenu">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="GridMain">
@@ -55,13 +53,17 @@
         </Storyboard>
     </Window.Resources>
 
-    <Grid Background="#EAA124">
+    <Grid Background="#EAA124" Margin="0,-3,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="13*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="271*"/>
             <ColumnDefinition Width="145*"/>
             <ColumnDefinition Width="92*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel x:Name="StackPanelMenu" Width="222" HorizontalAlignment="Left" Margin="-5,-10,0,10" RenderTransformOrigin="0.5,0.5">
+        <StackPanel x:Name="StackPanelMenu" Width="222" HorizontalAlignment="Left" Margin="-5,-10,0,10" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
             <StackPanel.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -71,7 +73,7 @@
                 </TransformGroup>
             </StackPanel.RenderTransform>
             <StackPanel  Orientation="Horizontal" VerticalAlignment="Top" Height="100" HorizontalAlignment="Center">
-                <Image Source="logo.png" Width="168" Margin="0,0,0,10"/>
+                <Image Source="/GlobalStore;component/Resources/logo.png" Width="168" Margin="0,0,0,10" IsEnabled="False"/>
             </StackPanel>
 
             <ListView>
@@ -90,7 +92,7 @@
                         <TextBlock x:Name="listViewItem_txtscan" Foreground="#242222" Margin="10" VerticalAlignment="Center"/>
                     </StackPanel>
                 </ListViewItem>
-              <!--  <ListViewItem x:Name="listViewItemLeaveFeedback" Height="60" RenderTransformOrigin="0.5,0.5"  Selected="listViewItemLeaveFeedback_Selected">
+                <!--  <ListViewItem x:Name="listViewItemLeaveFeedback" Height="60" RenderTransformOrigin="0.5,0.5"  Selected="listViewItemLeaveFeedback_Selected">
                     <ListViewItem.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -116,7 +118,7 @@
                         </TransformGroup>
                     </ListViewItem.RenderTransform>
                     <StackPanel Orientation="Horizontal" Margin="10 0">
-                        <Image Source="Resources/Language/english.png" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <Image Source="/GlobalStore;component/Resources/Language/en.png" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
                         <TextBlock x:Name="txt_en" Margin="10" Foreground="#242222" VerticalAlignment="Center" />
                     </StackPanel>
                 </ListViewItem>
@@ -130,7 +132,7 @@
                         </TransformGroup>
                     </ListViewItem.RenderTransform>
                     <StackPanel Orientation="Horizontal" Margin="10 0">
-                        <Image Source="Resources/Language/romanian.png"  Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <Image Source="/GlobalStore;component/Resources/Language/ro.png"  Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
                         <TextBlock x:Name="txt_ro" Margin="10" Foreground="#242222" VerticalAlignment="Center" />
                     </StackPanel>
                 </ListViewItem>
@@ -144,13 +146,13 @@
                         </TransformGroup>
                     </ListViewItem.RenderTransform>
                     <StackPanel Orientation="Horizontal" Margin="10 0">
-                        <Image Source="Resources/Language/russian.png"  Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <Image Source="/GlobalStore;component/Resources/Language/ru.png"  Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
                         <TextBlock x:Name="txt_ru" Margin="10" Foreground="#242222" VerticalAlignment="Center" />
                     </StackPanel>
                 </ListViewItem>
             </ListView>
         </StackPanel>
-        <Grid x:Name="mainGrid" Background="#FFFBFBFB" Margin="222,50,0,0" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="3">
+        <Grid x:Name="mainGrid" Background="#FFFBFBFB" Margin="222,50,0,0" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="3" Grid.RowSpan="2">
             <Grid x:Name="scannerGrid">
                 <Grid.RenderTransform>
                     <TransformGroup>
@@ -238,7 +240,7 @@
                         </StackPanel>
                     </Grid>
                 </Grid>
-                
+
             </Grid>
             <!-- <Grid x:Name="LayoutRoot" Background="Silver"  RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
                 <extToolkit:BusyIndicator x:Name="busyIndicator" Margin="0,0,0,10">
@@ -261,7 +263,7 @@
                     </Grid>
                 </extToolkit:BusyIndicator>
             </Grid>-->
-           <!-- <Grid x:Name="searchingGrid" Background="Silver" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" Visibility="Hidden">
+            <!-- <Grid x:Name="searchingGrid" Background="Silver" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" Visibility="Hidden">
                 <StackPanel x:Name="searchRoot">
                     
                         <TextBlock Text="Value-Based Progress Bar"/>
