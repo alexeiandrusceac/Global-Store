@@ -37,7 +37,6 @@ using System.Windows.Shapes;
 using System.Windows.Shell;
 using WpfAnimatedGif;
 using Xceed.Wpf.Toolkit;
-using Xceed.Wpf.Toolkit.Chart;
 using Xceed.Wpf.Toolkit.Chromes;
 using Xceed.Wpf.Toolkit.Converters;
 using Xceed.Wpf.Toolkit.Core;
