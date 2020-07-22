@@ -9,7 +9,7 @@
         Style="{StaticResource WindowStyle}"
         xmlns:extToolkit="http://schemas.xceed.com/wpf/xaml/toolkit"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        xmlns:fa="http://schemas.fontawesome.io/icons/"     WindowStartupLocation="CenterScreen">
+        xmlns:fa="http://schemas.fontawesome.io/icons/"     WindowStartupLocation="CenterScreen" WindowState="Maximized">
    
     <Window.Resources>
         <Storyboard x:Key="OpenMenu">
@@ -63,36 +63,37 @@
             <ColumnDefinition Width="145*"/>
             <ColumnDefinition Width="92*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel x:Name="StackPanelMenu" Width="222" HorizontalAlignment="Left" Margin="-5,-10,0,10" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
-            <StackPanel.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </StackPanel.RenderTransform>
-            <StackPanel  Orientation="Horizontal" VerticalAlignment="Top" Height="100" HorizontalAlignment="Center">
-                <Image Source="/GlobalStore;component/Resources/logo.png" Width="168" Margin="0,0,0,10" IsEnabled="False"/>
-            </StackPanel>
+        
+            <StackPanel x:Name="StackPanelMenu" Width="222" HorizontalAlignment="Left" Margin="-5,-10,0,10" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
+                <StackPanel.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </StackPanel.RenderTransform>
+                <StackPanel  Orientation="Horizontal" VerticalAlignment="Top" Height="100" HorizontalAlignment="Center">
+                    <Image Source="/GlobalStore;component/Resources/logo.png" Width="168" Margin="0,0,0,10" IsEnabled="False"/>
+                </StackPanel>
 
-            <ListView>
+                <ListView>
 
-                <ListViewItem x:Name="listViewItemScanning" Height="60" RenderTransformOrigin="0.5,0.5"  Selected="listViewItemScanning_Selected">
-                    <ListViewItem.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform/>
-                            <SkewTransform/>
-                            <RotateTransform/>
-                            <TranslateTransform/>
-                        </TransformGroup>
-                    </ListViewItem.RenderTransform>
-                    <StackPanel Orientation="Horizontal" Margin="10 0">
-                        <materialDesign:PackIcon Kind="Scanner" Foreground="#242222" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock x:Name="listViewItem_txtscan" Foreground="#242222" Margin="10" VerticalAlignment="Center"/>
-                    </StackPanel>
-                </ListViewItem>
-                <!--  <ListViewItem x:Name="listViewItemLeaveFeedback" Height="60" RenderTransformOrigin="0.5,0.5"  Selected="listViewItemLeaveFeedback_Selected">
+                    <ListViewItem x:Name="listViewItemScanning" Height="60" RenderTransformOrigin="0.5,0.5"  Selected="listViewItemScanning_Selected">
+                        <ListViewItem.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </ListViewItem.RenderTransform>
+                        <StackPanel Orientation="Horizontal" Margin="10 0">
+                            <materialDesign:PackIcon Kind="Scanner" Foreground="#242222" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                            <TextBlock x:Name="listViewItem_txtscan" Foreground="#242222" Margin="10" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <!--  <ListViewItem x:Name="listViewItemLeaveFeedback" Height="60" RenderTransformOrigin="0.5,0.5"  Selected="listViewItemLeaveFeedback_Selected">
                     <ListViewItem.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -106,52 +107,53 @@
                         <TextBlock x:Name="listViewItem_txtleaveFbck" Margin="10" Foreground="#242222" VerticalAlignment="Center" />
                     </StackPanel>
                 </ListViewItem>-->
-            </ListView>
-            <ListView Height="381">
-                <ListViewItem x:Name="listViewTranslateEn" Height="60" RenderTransformOrigin="0.5,0.5"  Selected="listViewTranslateEn_Selected">
-                    <ListViewItem.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform/>
-                            <SkewTransform/>
-                            <RotateTransform/>
-                            <TranslateTransform/>
-                        </TransformGroup>
-                    </ListViewItem.RenderTransform>
-                    <StackPanel Orientation="Horizontal" Margin="10 0">
-                        <Image Source="/GlobalStore;component/Resources/Language/en.png" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock x:Name="txt_en" Margin="10" Foreground="#242222" VerticalAlignment="Center" />
-                    </StackPanel>
-                </ListViewItem>
-                <ListViewItem x:Name="listViewTranslateRo" Height="60" RenderTransformOrigin="0.5,0.5" Selected="listViewTranslateRo_Selected">
-                    <ListViewItem.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform/>
-                            <SkewTransform/>
-                            <RotateTransform/>
-                            <TranslateTransform/>
-                        </TransformGroup>
-                    </ListViewItem.RenderTransform>
-                    <StackPanel Orientation="Horizontal" Margin="10 0">
-                        <Image Source="/GlobalStore;component/Resources/Language/ro.png"  Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock x:Name="txt_ro" Margin="10" Foreground="#242222" VerticalAlignment="Center" />
-                    </StackPanel>
-                </ListViewItem>
-                <ListViewItem x:Name="listViewTranslateRu" Height="60" RenderTransformOrigin="0.5,0.5" Selected="listViewTranslateRu_Selected">
-                    <ListViewItem.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform/>
-                            <SkewTransform/>
-                            <RotateTransform/>
-                            <TranslateTransform/>
-                        </TransformGroup>
-                    </ListViewItem.RenderTransform>
-                    <StackPanel Orientation="Horizontal" Margin="10 0">
-                        <Image Source="/GlobalStore;component/Resources/Language/ru.png"  Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock x:Name="txt_ru" Margin="10" Foreground="#242222" VerticalAlignment="Center" />
-                    </StackPanel>
-                </ListViewItem>
-            </ListView>
-        </StackPanel>
+                </ListView>
+                <ListView Height="381">
+                    <ListViewItem x:Name="listViewTranslateEn" Height="60" RenderTransformOrigin="0.5,0.5"  Selected="listViewTranslateEn_Selected">
+                        <ListViewItem.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </ListViewItem.RenderTransform>
+                        <StackPanel Orientation="Horizontal" Margin="10 0">
+                            <Image Source="/GlobalStore;component/Resources/Language/en.png" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                            <TextBlock x:Name="txt_en" Margin="10" Foreground="#242222" VerticalAlignment="Center" />
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem x:Name="listViewTranslateRo" Height="60" RenderTransformOrigin="0.5,0.5" Selected="listViewTranslateRo_Selected">
+                        <ListViewItem.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </ListViewItem.RenderTransform>
+                        <StackPanel Orientation="Horizontal" Margin="10 0">
+                            <Image Source="/GlobalStore;component/Resources/Language/ro.png"  Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                            <TextBlock x:Name="txt_ro" Margin="10" Foreground="#242222" VerticalAlignment="Center" />
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem x:Name="listViewTranslateRu" Height="60" RenderTransformOrigin="0.5,0.5" Selected="listViewTranslateRu_Selected">
+                        <ListViewItem.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </ListViewItem.RenderTransform>
+                        <StackPanel Orientation="Horizontal" Margin="10 0">
+                            <Image Source="/GlobalStore;component/Resources/Language/ru.png"  Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                            <TextBlock x:Name="txt_ru" Margin="10" Foreground="#242222" VerticalAlignment="Center" />
+                        </StackPanel>
+                    </ListViewItem>
+                </ListView>
+            </StackPanel>
+       
         <Grid x:Name="mainGrid" Background="#FFFBFBFB" Margin="222,50,0,0" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="3" Grid.RowSpan="2">
             <Grid x:Name="scannerGrid">
                 <Grid.RenderTransform>
@@ -171,7 +173,6 @@
                     <StackPanel Margin="0,0,0,374"/>
                     <StackPanel Margin="0,150,0,78">
                         <TextBlock x:Name="productTitle"  Foreground="White" FontSize="28" FontFamily="Nirmala UI Semilight"  VerticalAlignment="Top" RenderTransformOrigin="0.488,-1.432"/>
-
                         <TextBlock x:Name="productDescription" TextWrapping="Wrap" Margin="0,10" Foreground="#FFFBFBFB" FontSize="14" Height="245">
                         </TextBlock>
 
