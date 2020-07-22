@@ -93,6 +93,7 @@
     </ApplicationDefinition>
     <Compile Include="Entity\Constants.cs" />
     <Compile Include="Entity\Feedback.cs" />
+    <Compile Include="Entity\ProductDescription.cs" />
     <Compile Include="WindowPages\LoadingWindow.xaml.cs">
       <DependentUpon>LoadingWindow.xaml</DependentUpon>
     </Compile>
