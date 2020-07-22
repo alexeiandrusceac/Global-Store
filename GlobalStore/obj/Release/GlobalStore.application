@@ -7,14 +7,14 @@
     <framework targetVersion="4.8" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="GlobalStore.exe.manifest" size="28036">
+    <dependentAssembly dependencyType="install" codebase="GlobalStore.exe.manifest" size="25278">
       <assemblyIdentity name="GlobalStore.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>oJx9OX7e1FQJ3asnV7LekDspvKMiU00Py2SlbgI5e5U=</dsig:DigestValue>
+        <dsig:DigestValue>skcOTcGeRvd23543iVzhSJCOGB1P9N+SQQArjeqTkAM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

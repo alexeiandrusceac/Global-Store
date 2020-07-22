@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
   <asmv1:assemblyIdentity name="GlobalStore.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Resources\favicon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
     <assemblyIdentity name="GlobalStore" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -54,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GlobalStore.exe" size="4897280">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GlobalStore.exe" size="4928512">
       <assemblyIdentity name="GlobalStore" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Z61MywBuvDLs3bnSI90EGyIpi+kQXE7UM0y16+oEtj4=</dsig:DigestValue>
+        <dsig:DigestValue>af07UdtkkB8v1cYmKDT82vLUcYOd2+ad3GMGYRN+uHw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -73,7 +74,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>s6nM3EC0dTsX09xzaqBXVz4NLdzcP7V4f4FmuqVa+Ok=</dsig:DigestValue>
+        <dsig:DigestValue>Y9AWGG6nmMiQUSFTb34Bk0+X121X9xjqmCBGhdUncVI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -85,7 +86,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>qzn0ufE0OYv29Lo7grk/25FkDspoJjV/zTj+JOwUsB8=</dsig:DigestValue>
+        <dsig:DigestValue>FTvPrAFgVkz0TmNjZV9qce1FTeFkc1H1x7h4fQigjec=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -97,7 +98,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>vXoTRz70Qynn49mIrwrVpxoAB0bfkPq9xe+6A9TX0sA=</dsig:DigestValue>
+        <dsig:DigestValue>OZPvkLWMxk91m3OFSVeqoAyH0dcr6Y6VsBy97ZaBMjM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -401,78 +402,6 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Content\font-awesome.css" size="37414">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Content\font-awesome.min.css" size="31000">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="fonts\FontAwesome.otf" size="134808">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>RE3UNmYV/8ShbQErL6kBNwZdPMtBD6b9Xk3de15P/NU=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="fonts\fontawesome-webfont.eot" size="165742">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>e/yrbbmdXPvxcFygU23ceFhUMsxfpBu9etDwCQM7KXk=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="fonts\fontawesome-webfont.svg" size="444379">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>rWFXkmwWIrpOHQPUePFUE2hSS/xG9R5C/g2UX37zI+Q=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="fonts\fontawesome-webfont.ttf" size="165548">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>qljzPyOaD7AvXHpsRcBD16msmgkzNYBmlOzW1O3A1qg=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="fonts\fontawesome-webfont.woff" size="98024">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>ugxZ3rVFD1y0Gz+TYJ7i0NmVQVh33foiPoqKdTNHTwc=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="fonts\fontawesome-webfont.woff2" size="77160">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Kt78vAQefRj88tQXh53FoJmXqmTWdbejxLbOM9oT8/4=</dsig:DigestValue>
-    </hash>
-  </file>
   <file name="GlobalStore.exe.config" size="565">
     <hash>
       <dsig:Transforms>
@@ -480,6 +409,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>/rbwSnuGSKn6SA5vsDX+9NEAqSfN+CpyRtIgAERNt4Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\favicon.ico" size="15406">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>coImwV0cxdT/jKHJhrey3igEc0Vl2FSYnE+EksosY1Y=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
