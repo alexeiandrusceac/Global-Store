@@ -280,3 +280,4 @@ C:\Users\Utilizator\Desktop\Global-Store\GlobalStore\obj\Release\GlobalStore.app
 C:\Users\Utilizator\Desktop\Global-Store\GlobalStore\obj\Release\GlobalStore.csproj.CopyComplete
 C:\Users\Utilizator\Desktop\Global-Store\GlobalStore\obj\Release\GlobalStore.exe
 C:\Users\Utilizator\Desktop\Global-Store\GlobalStore\obj\Release\GlobalStore.pdb
+C:\Users\Utilizator\Desktop\Global-Store\GlobalStore\obj\Release\GlobalStore.csprojAssemblyReference.cache
