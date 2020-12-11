@@ -62,7 +62,7 @@
             },
             "System.Drawing.Common": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[5.0.0, )"
             },
             "System.IO": {
               "target": "Package",
@@ -70,11 +70,11 @@
             },
             "System.IO.Ports": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[5.0.0, )"
             },
             "System.Runtime.CompilerServices.Unsafe": {
               "target": "Package",
-              "version": "[4.7.1, )"
+              "version": "[5.0.0, )"
             },
             "System.Threading.Tasks.Extensions": {
               "target": "Package",

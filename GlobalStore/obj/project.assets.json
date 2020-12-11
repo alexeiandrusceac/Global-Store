@@ -99,7 +99,7 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "System.Drawing.Common/4.7.0": {
+      "System.Drawing.Common/5.0.0": {
         "type": "package",
         "frameworkAssemblies": [
           "System",
@@ -126,7 +126,7 @@
           "lib/net462/System.IO.dll": {}
         }
       },
-      "System.IO.Ports/4.7.0": {
+      "System.IO.Ports/5.0.0": {
         "type": "package",
         "frameworkAssemblies": [
           "System",
@@ -153,7 +153,7 @@
           }
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.7.1": {
+      "System.Runtime.CompilerServices.Unsafe/5.0.0": {
         "type": "package",
         "frameworkAssemblies": [
           "mscorlib"
@@ -162,7 +162,7 @@
           "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
         },
         "runtime": {
-          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/net45/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
       "System.Threading.Tasks.Extensions/4.5.4": {
@@ -297,7 +297,7 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "System.Drawing.Common/4.7.0": {
+      "System.Drawing.Common/5.0.0": {
         "type": "package",
         "frameworkAssemblies": [
           "System",
@@ -324,7 +324,7 @@
           "lib/net462/System.IO.dll": {}
         }
       },
-      "System.IO.Ports/4.7.0": {
+      "System.IO.Ports/5.0.0": {
         "type": "package",
         "frameworkAssemblies": [
           "System",
@@ -337,7 +337,7 @@
           "runtimes/win/lib/net461/System.IO.Ports.dll": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.7.1": {
+      "System.Runtime.CompilerServices.Unsafe/5.0.0": {
         "type": "package",
         "frameworkAssemblies": [
           "mscorlib"
@@ -346,7 +346,7 @@
           "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
         },
         "runtime": {
-          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/net45/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
       "System.Threading.Tasks.Extensions/4.5.4": {
@@ -481,7 +481,7 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "System.Drawing.Common/4.7.0": {
+      "System.Drawing.Common/5.0.0": {
         "type": "package",
         "frameworkAssemblies": [
           "System",
@@ -508,7 +508,7 @@
           "lib/net462/System.IO.dll": {}
         }
       },
-      "System.IO.Ports/4.7.0": {
+      "System.IO.Ports/5.0.0": {
         "type": "package",
         "frameworkAssemblies": [
           "System",
@@ -521,7 +521,7 @@
           "lib/net461/System.IO.Ports.dll": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.7.1": {
+      "System.Runtime.CompilerServices.Unsafe/5.0.0": {
         "type": "package",
         "frameworkAssemblies": [
           "mscorlib"
@@ -530,7 +530,7 @@
           "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
         },
         "runtime": {
-          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/net45/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
       "System.Threading.Tasks.Extensions/4.5.4": {
@@ -665,7 +665,7 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "System.Drawing.Common/4.7.0": {
+      "System.Drawing.Common/5.0.0": {
         "type": "package",
         "frameworkAssemblies": [
           "System",
@@ -692,7 +692,7 @@
           "lib/net462/System.IO.dll": {}
         }
       },
-      "System.IO.Ports/4.7.0": {
+      "System.IO.Ports/5.0.0": {
         "type": "package",
         "frameworkAssemblies": [
           "System",
@@ -705,7 +705,7 @@
           "lib/net461/System.IO.Ports.dll": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.7.1": {
+      "System.Runtime.CompilerServices.Unsafe/5.0.0": {
         "type": "package",
         "frameworkAssemblies": [
           "mscorlib"
@@ -714,7 +714,7 @@
           "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
         },
         "runtime": {
-          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/net45/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
       "System.Threading.Tasks.Extensions/4.5.4": {
@@ -913,18 +913,21 @@
         "packageIcon.png"
       ]
     },
-    "System.Drawing.Common/4.7.0": {
-      "sha512": "v+XbyYHaZjDfn0ENmJEV1VYLgGgCTx1gnfOBcppowbpOAriglYgGCvFCPr2EEZyBvXlpxbEsTwkOlInl107ahA==",
+    "System.Drawing.Common/5.0.0": {
+      "sha512": "SztFwAnpfKC8+sEKXAFxCBWhKQaEd97EiOL7oZJZP56zbqnLpmxACWA8aGseaUExciuEAUuR9dY8f7HkTRAdnw==",
       "type": "package",
-      "path": "system.drawing.common/4.7.0",
+      "path": "system.drawing.common/5.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
         "lib/net461/System.Drawing.Common.dll",
+        "lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "lib/netcoreapp3.0/System.Drawing.Common.xml",
         "lib/netstandard2.0/System.Drawing.Common.dll",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
@@ -946,7 +949,7 @@
         "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll",
         "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll",
         "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.xml",
-        "system.drawing.common.4.7.0.nupkg.sha512",
+        "system.drawing.common.5.0.0.nupkg.sha512",
         "system.drawing.common.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -1033,13 +1036,14 @@
         "system.io.nuspec"
       ]
     },
-    "System.IO.Ports/4.7.0": {
-      "sha512": "tNHiZcdskfRpxU7LBBlA69YYgBqWMBE/JDdmrEIDa4iw944VK1u4+B0FeSls1FUm+Pm4X/Fl0fSGqi8MDhb8/Q==",
+    "System.IO.Ports/5.0.0": {
+      "sha512": "MZY/0cgRg5bcuvHR4LKHqWnlxWV7GkoTgBaOdwIoWGZKsfSBC1twDz+BzG0o1Rk46WdRhhV30E2qzsBABHwGUA==",
       "type": "package",
-      "path": "system.io.ports/4.7.0",
+      "path": "system.io.ports/5.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net461/System.IO.Ports.dll",
@@ -1061,24 +1065,24 @@
         "runtimes/win/lib/netstandard2.0/System.IO.Ports.dll",
         "runtimes/win/lib/netstandard2.0/System.IO.Ports.xml",
         "runtimes/win/lib/uap10.0.16299/_._",
-        "system.io.ports.4.7.0.nupkg.sha512",
+        "system.io.ports.5.0.0.nupkg.sha512",
         "system.io.ports.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
     },
-    "System.Runtime.CompilerServices.Unsafe/4.7.1": {
-      "sha512": "zOHkQmzPCn5zm/BH+cxC1XbUS3P4Yoi3xzW7eRgVpDR2tPGSzyMZ17Ig1iRkfJuY0nhxkQQde8pgePNiA7z7TQ==",
+    "System.Runtime.CompilerServices.Unsafe/5.0.0": {
+      "sha512": "ZD9TMpsmYJLrxbbmdvhwt9YEgG5WntEnZ/d1eH8JBX9LBp+Ju8BSBhUGbZMNVHHomWo2KVImJhTDl2hIgw/6MA==",
       "type": "package",
-      "path": "system.runtime.compilerservices.unsafe/4.7.1",
+      "path": "system.runtime.compilerservices.unsafe/5.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/net45/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net45/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
@@ -1091,7 +1095,9 @@
         "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512",
+        "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -1174,10 +1180,10 @@
       "FontAwesome.WPF >= 4.7.0.9",
       "MaterialDesignThemes >= 3.2.0",
       "Newtonsoft.Json >= 12.0.3",
-      "System.Drawing.Common >= 4.7.0",
+      "System.Drawing.Common >= 5.0.0",
       "System.IO >= 4.3.0",
-      "System.IO.Ports >= 4.7.0",
-      "System.Runtime.CompilerServices.Unsafe >= 4.7.1",
+      "System.IO.Ports >= 5.0.0",
+      "System.Runtime.CompilerServices.Unsafe >= 5.0.0",
       "System.Threading.Tasks.Extensions >= 4.5.4",
       "WPFtoolkitFramework >= 1.0.7.5",
       "WpfAnimatedGif >= 2.0.0"
@@ -1245,7 +1251,7 @@
           },
           "System.Drawing.Common": {
             "target": "Package",
-            "version": "[4.7.0, )"
+            "version": "[5.0.0, )"
           },
           "System.IO": {
             "target": "Package",
@@ -1253,11 +1259,11 @@
           },
           "System.IO.Ports": {
             "target": "Package",
-            "version": "[4.7.0, )"
+            "version": "[5.0.0, )"
           },
           "System.Runtime.CompilerServices.Unsafe": {
             "target": "Package",
-            "version": "[4.7.1, )"
+            "version": "[5.0.0, )"
           },
           "System.Threading.Tasks.Extensions": {
             "target": "Package",

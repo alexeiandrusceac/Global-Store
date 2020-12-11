@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>pxTpwaIs197+TWvV+w620Cjc9aAGIkilkoh1MHgtAoc=</dsig:DigestValue>
+        <dsig:DigestValue>ldXPYSQglYpSq9EwGPQ4N/A4GOhd3j/IAdqZMBWcj4g=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -74,7 +74,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>/G3YDMEpjsc3PJofpNE036tLfaZcxSqAHfp1poTrDq4=</dsig:DigestValue>
+        <dsig:DigestValue>eqMHCMGA9HsoeqX5OO+CWTWeBR4cjTFamWnuXMiJpEs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -86,7 +86,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>w8ggTmdSNIIHUs6pmTcNV6YkxhwQuxNd37m2d65wIMc=</dsig:DigestValue>
+        <dsig:DigestValue>bXINThf6jSe7Qf5772GnxrxqYJgZ4kxtvdKHP369xxk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -98,7 +98,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2ixIjvmgKxYrz9XQ2fqA0+IvgY7zRJbmou0YyTViz74=</dsig:DigestValue>
+        <dsig:DigestValue>u89stCMk+divHedmM3K7jba39q+3PU8x/QPsMn9WRrc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -151,26 +151,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.IO.Ports.dll" size="29560">
-      <assemblyIdentity name="System.IO.Ports" version="4.0.3.0" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.IO.Ports.dll" size="32640">
+      <assemblyIdentity name="System.IO.Ports" version="5.0.0.0" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ltThhxrGmfbbwOzFTji+rW5S22TDtD+3MwNispm/8PQ=</dsig:DigestValue>
+        <dsig:DigestValue>7P53hQO/V9SrxwpyUouyFnVQwGViS2SFqooB1U1lDqM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Runtime.CompilerServices.Unsafe.dll" size="17000">
-      <assemblyIdentity name="System.Runtime.CompilerServices.Unsafe" version="4.0.6.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Runtime.CompilerServices.Unsafe.dll" size="16768">
+      <assemblyIdentity name="System.Runtime.CompilerServices.Unsafe" version="5.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>9u+WbQGbHEBmWc4Y86sAw8fJM05NrcAkm8ZyHNt37po=</dsig:DigestValue>
+        <dsig:DigestValue>PK3La4pzNRQcfDV6HXevH/SbWbhy30lPUCVYAZHRwNU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -402,13 +402,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="GlobalStore.exe.config" size="565">
+  <file name="GlobalStore.exe.config" size="551">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>/rbwSnuGSKn6SA5vsDX+9NEAqSfN+CpyRtIgAERNt4Q=</dsig:DigestValue>
+      <dsig:DigestValue>H7SwCmepoBsLZbB7hiULoHfdq8K6XA14nB0hmKqfHdM=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Resources\favicon.ico" size="15406">
