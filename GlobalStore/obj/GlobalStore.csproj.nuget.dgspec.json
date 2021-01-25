@@ -19,20 +19,20 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net461"
+          "net472"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net461": {
+          "net472": {
             "projectReferences": {}
           }
         }
       },
       "frameworks": {
-        "net461": {
+        "net472": {
           "dependencies": {
             "Extended.Wpf.Toolkit": {
               "target": "Package",

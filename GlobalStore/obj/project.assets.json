@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v4.6.1": {
+    ".NETFramework,Version=v4.7.2": {
       "Extended.Wpf.Toolkit/4.0.1": {
         "type": "package",
         "compile": {
@@ -116,13 +116,14 @@
       "System.IO/4.3.0": {
         "type": "package",
         "frameworkAssemblies": [
-          "System"
+          "System",
+          "mscorlib"
         ],
         "compile": {
-          "ref/net45/_._": {}
+          "ref/net462/System.IO.dll": {}
         },
         "runtime": {
-          "lib/net45/_._": {}
+          "lib/net462/System.IO.dll": {}
         }
       },
       "System.IO.Ports/5.0.0": {
@@ -198,7 +199,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.6.1/win": {
+    ".NETFramework,Version=v4.7.2/win": {
       "Extended.Wpf.Toolkit/4.0.1": {
         "type": "package",
         "compile": {
@@ -313,13 +314,14 @@
       "System.IO/4.3.0": {
         "type": "package",
         "frameworkAssemblies": [
-          "System"
+          "System",
+          "mscorlib"
         ],
         "compile": {
-          "ref/net45/_._": {}
+          "ref/net462/System.IO.dll": {}
         },
         "runtime": {
-          "lib/net45/_._": {}
+          "lib/net462/System.IO.dll": {}
         }
       },
       "System.IO.Ports/5.0.0": {
@@ -381,7 +383,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.6.1/win-x64": {
+    ".NETFramework,Version=v4.7.2/win-x64": {
       "Extended.Wpf.Toolkit/4.0.1": {
         "type": "package",
         "compile": {
@@ -496,13 +498,14 @@
       "System.IO/4.3.0": {
         "type": "package",
         "frameworkAssemblies": [
-          "System"
+          "System",
+          "mscorlib"
         ],
         "compile": {
-          "ref/net45/_._": {}
+          "ref/net462/System.IO.dll": {}
         },
         "runtime": {
-          "lib/net45/_._": {}
+          "lib/net462/System.IO.dll": {}
         }
       },
       "System.IO.Ports/5.0.0": {
@@ -564,7 +567,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.6.1/win-x86": {
+    ".NETFramework,Version=v4.7.2/win-x86": {
       "Extended.Wpf.Toolkit/4.0.1": {
         "type": "package",
         "compile": {
@@ -679,13 +682,14 @@
       "System.IO/4.3.0": {
         "type": "package",
         "frameworkAssemblies": [
-          "System"
+          "System",
+          "mscorlib"
         ],
         "compile": {
-          "ref/net45/_._": {}
+          "ref/net462/System.IO.dll": {}
         },
         "runtime": {
-          "lib/net45/_._": {}
+          "lib/net462/System.IO.dll": {}
         }
       },
       "System.IO.Ports/5.0.0": {
@@ -1170,7 +1174,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v4.6.1": [
+    ".NETFramework,Version=v4.7.2": [
       "Extended.Wpf.Toolkit >= 4.0.1",
       "FontAwesome >= 4.7.0",
       "FontAwesome.WPF >= 4.7.0.9",
@@ -1203,20 +1207,20 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net461"
+        "net472"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net461": {
+        "net472": {
           "projectReferences": {}
         }
       }
     },
     "frameworks": {
-      "net461": {
+      "net472": {
         "dependencies": {
           "Extended.Wpf.Toolkit": {
             "target": "Package",

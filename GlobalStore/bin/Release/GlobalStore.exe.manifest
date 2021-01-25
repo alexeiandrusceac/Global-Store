@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>l6dJp5+ZHG+h+9VH1N0+T5/VRIfNvTI2Lcd3Zj4+IHU=</dsig:DigestValue>
+        <dsig:DigestValue>BXiAZYoZKAE4Sz3XzyYcobEeYerc4Canlqjwk/6ztoA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -74,7 +74,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>sSATNDtOAyera8l60A3tNJgyiDQrYw243of9aNI25hE=</dsig:DigestValue>
+        <dsig:DigestValue>e9MnFLp/5YlSLhZ4q8UBKlkWBwmMveuXEEI0EWpQhbI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -86,7 +86,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>dm0i3e+er6sKxXIxpbA38uFPwRDXNFYq8ujS4RVTUMg=</dsig:DigestValue>
+        <dsig:DigestValue>XFlHzcryqlDpS0j7HkFlfncv9bHTR9N7WZ5Clg97CYo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -98,7 +98,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>x+rDSjjUi8xnnku/qQEFdb6SmnUQrC4AnQjhvrmApzM=</dsig:DigestValue>
+        <dsig:DigestValue>71FpVe2CDa0CBbVPrImqaKd48jA2nokfWeM7lvZY4D4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -408,7 +408,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>BJeXry8jmqg8Lpbn59qUmW5QcBQhGQpTVQ1OgYAUTcc=</dsig:DigestValue>
+      <dsig:DigestValue>+TkINLzUrDKGOOg5meuqrpuKVNrdu/GNRtN5/u+rhro=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Resources\favicon.ico" size="15406">
