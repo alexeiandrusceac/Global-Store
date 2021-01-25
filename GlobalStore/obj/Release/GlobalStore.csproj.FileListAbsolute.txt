@@ -84,15 +84,8 @@ D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Release\Xceed
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Release\Xceed.Wpf.AvalonDock.Themes.Metro.dll
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Release\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Release\Xceed.Wpf.Toolkit.dll
-D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Release\FontAwesome.WPF.xml
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Release\MaterialDesignColors.pdb
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Release\MaterialDesignThemes.Wpf.pdb
-D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Release\MaterialDesignThemes.Wpf.xml
-D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Release\Newtonsoft.Json.xml
-D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Release\System.IO.Ports.xml
-D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
-D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Release\System.Threading.Tasks.Extensions.xml
-D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Release\WpfAnimatedGif.xml
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Release\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Release\de\Xceed.Wpf.AvalonDock.resources.dll
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Release\es\Xceed.Wpf.AvalonDock.resources.dll
@@ -104,17 +97,12 @@ D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Release\ro\Xc
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Release\ru\Xceed.Wpf.AvalonDock.resources.dll
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Release\sv\Xceed.Wpf.AvalonDock.resources.dll
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Release\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
-D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\LoadingWindow.g.cs
-D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\MainWindow.g.cs
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\UpdateService\UpdateWindow.g.cs
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\UserPermisions\AcceptWindow.g.cs
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\App.g.cs
-D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\GlobalStore_Content.g.cs
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\GlobalStore_MarkupCompile.cache
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\GlobalStore_MarkupCompile.lref
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\App.baml
-D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\LoadingWindow.baml
-D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\MainWindow.baml
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\UpdateService\UpdateWindow.baml
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\UserPermisions\AcceptWindow.baml
 D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\GlobalStore.g.resources
@@ -281,3 +269,11 @@ C:\Users\Utilizator\Desktop\Global-Store\GlobalStore\obj\Release\GlobalStore.app
 C:\Users\Utilizator\Desktop\Global-Store\GlobalStore\obj\Release\GlobalStore.csproj.CopyComplete
 C:\Users\Utilizator\Desktop\Global-Store\GlobalStore\obj\Release\GlobalStore.exe
 C:\Users\Utilizator\Desktop\Global-Store\GlobalStore\obj\Release\GlobalStore.pdb
+D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\bin\Release\WpfAnimatedGif.pdb
+D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\GlobalStore.csprojAssemblyReference.cache
+D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\GlobalStore.exe.config
+D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\WindowPages\LoadingWindow.g.cs
+D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\WindowPages\MainWindow.g.cs
+D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\WindowPages\LoadingWindow.baml
+D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\WindowPages\MainWindow.baml
+D:\Proiecte\Proiecte NET\Global-Store\Global-Store\GlobalStore\obj\Release\GlobalStore.csproj.CoreCompileInputs.cache

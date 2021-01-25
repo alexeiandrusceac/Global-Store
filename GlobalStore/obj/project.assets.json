@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v4.8": {
+    ".NETFramework,Version=v4.6.1": {
       "Extended.Wpf.Toolkit/4.0.1": {
         "type": "package",
         "compile": {
@@ -116,14 +116,13 @@
       "System.IO/4.3.0": {
         "type": "package",
         "frameworkAssemblies": [
-          "System",
-          "mscorlib"
+          "System"
         ],
         "compile": {
-          "ref/net462/System.IO.dll": {}
+          "ref/net45/_._": {}
         },
         "runtime": {
-          "lib/net462/System.IO.dll": {}
+          "lib/net45/_._": {}
         }
       },
       "System.IO.Ports/5.0.0": {
@@ -199,7 +198,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.8/win": {
+    ".NETFramework,Version=v4.6.1/win": {
       "Extended.Wpf.Toolkit/4.0.1": {
         "type": "package",
         "compile": {
@@ -314,14 +313,13 @@
       "System.IO/4.3.0": {
         "type": "package",
         "frameworkAssemblies": [
-          "System",
-          "mscorlib"
+          "System"
         ],
         "compile": {
-          "ref/net462/System.IO.dll": {}
+          "ref/net45/_._": {}
         },
         "runtime": {
-          "lib/net462/System.IO.dll": {}
+          "lib/net45/_._": {}
         }
       },
       "System.IO.Ports/5.0.0": {
@@ -383,7 +381,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.8/win-x64": {
+    ".NETFramework,Version=v4.6.1/win-x64": {
       "Extended.Wpf.Toolkit/4.0.1": {
         "type": "package",
         "compile": {
@@ -498,14 +496,13 @@
       "System.IO/4.3.0": {
         "type": "package",
         "frameworkAssemblies": [
-          "System",
-          "mscorlib"
+          "System"
         ],
         "compile": {
-          "ref/net462/System.IO.dll": {}
+          "ref/net45/_._": {}
         },
         "runtime": {
-          "lib/net462/System.IO.dll": {}
+          "lib/net45/_._": {}
         }
       },
       "System.IO.Ports/5.0.0": {
@@ -567,7 +564,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.8/win-x86": {
+    ".NETFramework,Version=v4.6.1/win-x86": {
       "Extended.Wpf.Toolkit/4.0.1": {
         "type": "package",
         "compile": {
@@ -682,14 +679,13 @@
       "System.IO/4.3.0": {
         "type": "package",
         "frameworkAssemblies": [
-          "System",
-          "mscorlib"
+          "System"
         ],
         "compile": {
-          "ref/net462/System.IO.dll": {}
+          "ref/net45/_._": {}
         },
         "runtime": {
-          "lib/net462/System.IO.dll": {}
+          "lib/net45/_._": {}
         }
       },
       "System.IO.Ports/5.0.0": {
@@ -1174,7 +1170,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v4.8": [
+    ".NETFramework,Version=v4.6.1": [
       "Extended.Wpf.Toolkit >= 4.0.1",
       "FontAwesome >= 4.7.0",
       "FontAwesome.WPF >= 4.7.0.9",
@@ -1190,44 +1186,37 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Utilizator\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Alexei\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Utilizator\\Desktop\\Global-Store\\GlobalStore\\GlobalStore.csproj",
+      "projectUniqueName": "D:\\Proiecte\\Proiecte NET\\Global-Store\\Global-Store\\GlobalStore\\GlobalStore.csproj",
       "projectName": "GlobalStore",
-      "projectPath": "C:\\Users\\Utilizator\\Desktop\\Global-Store\\GlobalStore\\GlobalStore.csproj",
-      "packagesPath": "C:\\Users\\Utilizator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Utilizator\\Desktop\\Global-Store\\GlobalStore\\obj\\",
+      "projectPath": "D:\\Proiecte\\Proiecte NET\\Global-Store\\Global-Store\\GlobalStore\\GlobalStore.csproj",
+      "packagesPath": "C:\\Users\\Alexei\\.nuget\\packages\\",
+      "outputPath": "D:\\Proiecte\\Proiecte NET\\Global-Store\\Global-Store\\GlobalStore\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Utilizator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Alexei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net48"
+        "net461"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net48": {
+        "net461": {
           "projectReferences": {}
         }
       }
     },
     "frameworks": {
-      "net48": {
+      "net461": {
         "dependencies": {
           "Extended.Wpf.Toolkit": {
             "target": "Package",

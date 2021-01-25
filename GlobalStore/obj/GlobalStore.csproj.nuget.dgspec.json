@@ -1,44 +1,38 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Utilizator\\Desktop\\Global-Store\\GlobalStore\\GlobalStore.csproj": {}
+    "D:\\Proiecte\\Proiecte NET\\Global-Store\\Global-Store\\GlobalStore\\GlobalStore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Utilizator\\Desktop\\Global-Store\\GlobalStore\\GlobalStore.csproj": {
+    "D:\\Proiecte\\Proiecte NET\\Global-Store\\Global-Store\\GlobalStore\\GlobalStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Utilizator\\Desktop\\Global-Store\\GlobalStore\\GlobalStore.csproj",
+        "projectUniqueName": "D:\\Proiecte\\Proiecte NET\\Global-Store\\Global-Store\\GlobalStore\\GlobalStore.csproj",
         "projectName": "GlobalStore",
-        "projectPath": "C:\\Users\\Utilizator\\Desktop\\Global-Store\\GlobalStore\\GlobalStore.csproj",
-        "packagesPath": "C:\\Users\\Utilizator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Utilizator\\Desktop\\Global-Store\\GlobalStore\\obj\\",
+        "projectPath": "D:\\Proiecte\\Proiecte NET\\Global-Store\\Global-Store\\GlobalStore\\GlobalStore.csproj",
+        "packagesPath": "C:\\Users\\Alexei\\.nuget\\packages\\",
+        "outputPath": "D:\\Proiecte\\Proiecte NET\\Global-Store\\Global-Store\\GlobalStore\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Utilizator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Alexei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net48"
+          "net461"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net48": {
+          "net461": {
             "projectReferences": {}
           }
         }
       },
       "frameworks": {
-        "net48": {
+        "net461": {
           "dependencies": {
             "Extended.Wpf.Toolkit": {
               "target": "Package",

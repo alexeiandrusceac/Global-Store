@@ -1,22 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "NsZ3sxJ8HQcR3Vg0wBb4sVQOuEE4OowqYQbWHlybZ8BHH2pUNe5n1GPerYGN5odEi2vboXK8p5Si2IoNgAKT9w==",
+  "dgSpecHash": "xg5U1hefL1lqK1Qxp0ET+1I6Z5U/IqoOxLA5Kbn6J545lmgVWcJXgK9THbZwLXUgoTjYJXF5CN7BTMuNEfw/Tw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Utilizator\\Desktop\\Global-Store\\GlobalStore\\GlobalStore.csproj",
+  "projectFilePath": "D:\\Proiecte\\Proiecte NET\\Global-Store\\Global-Store\\GlobalStore\\GlobalStore.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Utilizator\\.nuget\\packages\\extended.wpf.toolkit\\4.0.1\\extended.wpf.toolkit.4.0.1.nupkg.sha512",
-    "C:\\Users\\Utilizator\\.nuget\\packages\\fontawesome\\4.7.0\\fontawesome.4.7.0.nupkg.sha512",
-    "C:\\Users\\Utilizator\\.nuget\\packages\\fontawesome.wpf\\4.7.0.9\\fontawesome.wpf.4.7.0.9.nupkg.sha512",
-    "C:\\Users\\Utilizator\\.nuget\\packages\\materialdesigncolors\\1.2.7\\materialdesigncolors.1.2.7.nupkg.sha512",
-    "C:\\Users\\Utilizator\\.nuget\\packages\\materialdesignthemes\\3.2.0\\materialdesignthemes.3.2.0.nupkg.sha512",
-    "C:\\Users\\Utilizator\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\Utilizator\\.nuget\\packages\\system.drawing.common\\5.0.0\\system.drawing.common.5.0.0.nupkg.sha512",
-    "C:\\Users\\Utilizator\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
-    "C:\\Users\\Utilizator\\.nuget\\packages\\system.io.ports\\5.0.0\\system.io.ports.5.0.0.nupkg.sha512",
-    "C:\\Users\\Utilizator\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
-    "C:\\Users\\Utilizator\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\Utilizator\\.nuget\\packages\\wpfanimatedgif\\2.0.0\\wpfanimatedgif.2.0.0.nupkg.sha512",
-    "C:\\Users\\Utilizator\\.nuget\\packages\\wpftoolkitframework\\1.0.7.5\\wpftoolkitframework.1.0.7.5.nupkg.sha512"
+    "C:\\Users\\Alexei\\.nuget\\packages\\extended.wpf.toolkit\\4.0.1\\extended.wpf.toolkit.4.0.1.nupkg.sha512",
+    "C:\\Users\\Alexei\\.nuget\\packages\\fontawesome\\4.7.0\\fontawesome.4.7.0.nupkg.sha512",
+    "C:\\Users\\Alexei\\.nuget\\packages\\fontawesome.wpf\\4.7.0.9\\fontawesome.wpf.4.7.0.9.nupkg.sha512",
+    "C:\\Users\\Alexei\\.nuget\\packages\\materialdesigncolors\\1.2.7\\materialdesigncolors.1.2.7.nupkg.sha512",
+    "C:\\Users\\Alexei\\.nuget\\packages\\materialdesignthemes\\3.2.0\\materialdesignthemes.3.2.0.nupkg.sha512",
+    "C:\\Users\\Alexei\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Alexei\\.nuget\\packages\\system.drawing.common\\5.0.0\\system.drawing.common.5.0.0.nupkg.sha512",
+    "C:\\Users\\Alexei\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
+    "C:\\Users\\Alexei\\.nuget\\packages\\system.io.ports\\5.0.0\\system.io.ports.5.0.0.nupkg.sha512",
+    "C:\\Users\\Alexei\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "C:\\Users\\Alexei\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\Alexei\\.nuget\\packages\\wpfanimatedgif\\2.0.0\\wpfanimatedgif.2.0.0.nupkg.sha512",
+    "C:\\Users\\Alexei\\.nuget\\packages\\wpftoolkitframework\\1.0.7.5\\wpftoolkitframework.1.0.7.5.nupkg.sha512"
   ],
   "logs": []
 }
