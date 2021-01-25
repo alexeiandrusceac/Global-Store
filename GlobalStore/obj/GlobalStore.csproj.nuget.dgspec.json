@@ -1,0 +1,107 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Utilizator\\Desktop\\Global-Store\\GlobalStore\\GlobalStore.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Utilizator\\Desktop\\Global-Store\\GlobalStore\\GlobalStore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Utilizator\\Desktop\\Global-Store\\GlobalStore\\GlobalStore.csproj",
+        "projectName": "GlobalStore",
+        "projectPath": "C:\\Users\\Utilizator\\Desktop\\Global-Store\\GlobalStore\\GlobalStore.csproj",
+        "packagesPath": "C:\\Users\\Utilizator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Utilizator\\Desktop\\Global-Store\\GlobalStore\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Utilizator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "Extended.Wpf.Toolkit": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "FontAwesome": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "FontAwesome.WPF": {
+              "target": "Package",
+              "version": "[4.7.0.9, )"
+            },
+            "MaterialDesignThemes": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.IO": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.IO.Ports": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Runtime.CompilerServices.Unsafe": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Threading.Tasks.Extensions": {
+              "target": "Package",
+              "version": "[4.5.4, )"
+            },
+            "WPFtoolkitFramework": {
+              "target": "Package",
+              "version": "[1.0.7.5, )"
+            },
+            "WpfAnimatedGif": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

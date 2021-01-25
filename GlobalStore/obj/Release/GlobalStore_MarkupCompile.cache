@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\obj\Release\
+C:\Users\Utilizator\Desktop\Global-Store\GlobalStore\obj\Release\
 GlobalStore
 none
 false
 TRACE
-C:\Users\Utilizator\Desktop\GlobalStore\GlobalStore\App.xaml
-4-191528619
-8-554976
-20-121887462
-134318212634
-LoadingWindow.xaml;MainWindow.xaml;UpdateService\UpdateWindow.xaml;UserPermisions\AcceptWindow.xaml;
+C:\Users\Utilizator\Desktop\Global-Store\GlobalStore\App.xaml
+4742981009
+
+21-1244559572
+1341659698564
+WindowPages\LoadingWindow.xaml;WindowPages\MainWindow.xaml;UpdateService\UpdateWindow.xaml;UserPermisions\AcceptWindow.xaml;
 
 False
 

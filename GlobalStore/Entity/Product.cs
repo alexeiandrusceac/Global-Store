@@ -150,29 +150,72 @@ namespace GlobalStore.Entity
         [JsonProperty(PropertyName ="UnitSaleBox")]
         public int UnitSaleBox { get; set; }
 
+        /// <summary>
+        /// Pret fix pentru produse retail care nu se face reducere
+        /// </summary>
+        public int PriceFix { get; set; }
+
+        /// <summary>
+        /// Articolul de la uzina
+        /// </summary>
+        public string FactoryCode { get; set; }
+        /// <summary>
+        /// Nr de bucati pentru Calea Iesilor 28/2
+        /// </summary>
+        public int StocET1 { get; set; }
+
+        /// <summary>
+        /// Nr de bucati pentru Calea Orheiului 
+        /// </summary>
+        public int StocCO { get; set; }
+        /// <summary>
+        /// Nr de bucati pentru Miorita
+        /// </summary>
+        public int StocM { get; set; }
+
+        /// <summary>
+        /// Codul de identitate al categoriei generale
+        /// </summary>
+        public int BaseCod { get; set; }
+
+        public List<ProductDescription> descProduct { get; set; }
+
+
+
         public Product convertToProductFromObj(object dataProduct)
         {
-            return new Product
-            {
-                ID = (int)dataProduct.GetType().GetProperty("ID").GetValue(dataProduct),
-                TitleRO = (string)dataProduct.GetType().GetProperty("TitleRO").GetValue(dataProduct),
-                TitleRU = (string)dataProduct.GetType().GetProperty("TitleRU").GetValue(dataProduct),
-                TitleEN = (string)dataProduct.GetType().GetProperty("TitleEN").GetValue(dataProduct),
-                BarcodeBuc = (string)dataProduct.GetType().GetProperty("BarcodeBuc").GetValue(dataProduct),
-                BarcodeBox = (string)dataProduct.GetType().GetProperty("BarcodeBox").GetValue(dataProduct),
-                BarcodeSet = (string)dataProduct.GetType().GetProperty("BarcodeSet").GetValue(dataProduct),
-                Price = (double)dataProduct.GetType().GetProperty("Price").GetValue(dataProduct),
-                DiscountPrice = (double)dataProduct.GetType().GetProperty("DiscountPrice").GetValue(dataProduct),
-                Image = (string[])dataProduct.GetType().GetProperty("Image").GetValue(dataProduct),
-                PricePromo = (double)dataProduct.GetType().GetProperty("PricePromo").GetValue(dataProduct),
-                QtySet = (double)dataProduct.GetType().GetProperty("QtySet").GetValue(dataProduct),
-                QtyBox = (double)dataProduct.GetType().GetProperty("QtyBox").GetValue(dataProduct),
-                DescriptionEN = (string)dataProduct.GetType().GetProperty("DescriptionEN").GetValue(dataProduct),
-                DescriptionRO = (string)dataProduct.GetType().GetProperty("DescriptionRO").GetValue(dataProduct),
-                DescriptionRU = (string)dataProduct.GetType().GetProperty("DescriptionRU").GetValue(dataProduct),
-                Model = (string)dataProduct.GetType().GetProperty("Model").GetValue(dataProduct),
+            
+            ID = (int)dataProduct.GetType().GetProperty("ID").GetValue(dataProduct);
+            TitleRO = (string)dataProduct.GetType().GetProperty("TitleRO").GetValue(dataProduct);
+            TitleRU = (string)dataProduct.GetType().GetProperty("TitleRU").GetValue(dataProduct);
+            TitleEN = (string)dataProduct.GetType().GetProperty("TitleEN").GetValue(dataProduct);
+            BarcodeBuc = (string)dataProduct.GetType().GetProperty("BarcodeBuc").GetValue(dataProduct);
+            BarcodeBox = (string)dataProduct.GetType().GetProperty("BarcodeBox").GetValue(dataProduct);
+            BarcodeSet = (string)dataProduct.GetType().GetProperty("BarcodeSet").GetValue(dataProduct);
+            Price = (double)dataProduct.GetType().GetProperty("Price").GetValue(dataProduct);
+            DiscountPrice = (double)dataProduct.GetType().GetProperty("DiscountPrice").GetValue(dataProduct);
+            Image = (string[])dataProduct.GetType().GetProperty("Image").GetValue(dataProduct);
+            PricePromo = (double)dataProduct.GetType().GetProperty("PricePromo").GetValue(dataProduct);
+            QtySet = (double)dataProduct.GetType().GetProperty("QtySet").GetValue(dataProduct);
+            QtyBox = (double)dataProduct.GetType().GetProperty("QtyBox").GetValue(dataProduct);
+            DescriptionEN = (string)dataProduct.GetType().GetProperty("DescriptionEN").GetValue(dataProduct);
+            DescriptionRO = (string)dataProduct.GetType().GetProperty("DescriptionRO").GetValue(dataProduct);
+            DescriptionRU = (string)dataProduct.GetType().GetProperty("DescriptionRU").GetValue(dataProduct);
+            Model = (string)dataProduct.GetType().GetProperty("Model").GetValue(dataProduct);
 
-            };
+            foreach (ProductDescription pDesc in (List<ProductDescription>)dataProduct.GetType().GetProperty("descProduct").GetValue(dataProduct))
+            {
+                descProduct.Add(new ProductDescription
+                {
+                    Name = pDesc.Name,
+                    Value = pDesc.Value,
+                    ValueRO = pDesc.ValueRO,
+                    ValueRU = pDesc.ValueRU,
+                    ValueEN = pDesc.ValueEN
+                });
+                
+            }
+            return this;
         }
         public string getDescription(Language lang)
         {
